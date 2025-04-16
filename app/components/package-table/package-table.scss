@@ -1,0 +1,146 @@
+@import "../../mixins.scss";
+
+.package-table {
+  table {
+    width: 100%;
+    border: none;
+    overflow: hidden;
+    border-radius: 24px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.14);
+    table-layout: auto;
+    thead {
+      background: #161616;
+      tr {
+        th {
+          stroke: none;
+          @include h6;
+          color: var(--secondary-color-two);
+          padding: 16px 0px;
+          text-align: left;
+        //   padding-left: 3px;
+        }
+      }
+    }
+    tbody {
+      background: #fff;
+      tr {
+        td {
+          max-width: 80px;
+          overflow: hidden;
+          padding: 22px 0 22px 0;
+          border-bottom: 1px solid #eeeeee;
+          @include p2($fw: 400);
+          color: var(--secondary-color-one);
+
+          &:nth-of-type(1) {
+            color: #a5a5a5;
+            text-align: center;
+          }
+          a {
+            background: var(--primary-color);
+            padding: 11px 24px;
+            border: none;
+            border-radius: 12px 0 12px 0;
+            color: var(--secondary-color-two);
+            @include btActive;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+            transition: var(--basic);
+            display: inline-block;
+            &:hover {
+              border-radius: 0 12px 0 12px;
+              text-decoration: underline;
+            }
+          }
+        }
+        .view-plan-btn{
+          min-width: 115px;
+        }
+      }
+    }
+  }
+}
+// tablet
+@media (min-width: 441px) and (max-width: 820px){
+  .package-table{
+    width: 100%;
+    overflow-x: scroll;
+    table {
+      text-align: center;
+      thead {
+        tr {
+          th {
+            @include h6;
+            padding: 16px 10px;
+            text-align: left;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            min-width: 190px;
+            padding: 16px 10px;
+            text-align: left;
+            &:nth-of-type(1) {
+              color: #a5a5a5;
+              text-align: center;
+            }
+            a {
+              padding: 10px 7px;
+              display: inline-block;
+            }
+          }
+          td:first-child{
+            min-width: 30px;
+          }
+          td:has(svg){
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+// mobile
+@media (max-width: 440px){       
+  .package-table{
+    width: 100%;
+    overflow-x: scroll;
+    table {
+      text-align: center;
+      thead {
+        tr {
+          th {
+            @include h6;
+            text-align: left;
+            padding: 16px 10px;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            min-width: 190px;
+            padding: 16px 10px;
+            text-align: left;
+            &:nth-of-type(1) {
+              color: #a5a5a5;
+              text-align: left;
+            }
+            a {
+              padding: 10px 7px;
+              display: inline-block;
+            }
+          }
+          td:first-child{
+            min-width: 30px;
+          }
+          td:has(svg){
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

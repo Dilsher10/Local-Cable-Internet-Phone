@@ -1,0 +1,251 @@
+@import "../../mixins.scss";
+
+.spectrum-deals {
+  position: relative;
+  .best-tv-service-offers {
+    background-color: var(--secondary-color-two);
+  }
+  .is-spectrum-good {
+    background: var(--secondary-color-three);
+    padding: 80px 5%;
+    .below-table {
+      text-align: center;
+    }
+  }
+  .deals-features {
+    background-color: var(--secondary-color-two);
+  }
+  .spectrum-discounts {
+    background: var(--secondary-color-three);
+    .channels {
+      background-color: var(--secondary-color-two);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+      .after-heading {
+        margin-top: 10px;
+        a {
+          @include p2($fw: 300);
+          color: #0070ff;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+      p {
+        span {
+          a {
+            @include p2($fw: 300);
+            color: var(--primary-color);
+            &:hover {
+              border-radius: 0 12px 0 12px;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      ul {
+        li {
+          @include p2($fw: 300);
+          span {
+            @include p2($fw: 300);
+            color: #0070ff;
+          }
+        }
+      }
+      .below-table {
+        text-align: center;
+      }
+      table {
+        tbody {
+          background-color: var(--secondary-color-three);
+        }
+      }
+      .btn {
+        overflow: hidden;
+        padding: 22px 0 22px 0;
+        @include p2($fw: 400);
+        color: var(--secondary-color-one);
+        text-transform: capitalize;
+
+        &:nth-of-type(1) {
+          color: #a5a5a5;
+          text-align: right;
+        }
+        a {
+          background: var(--primary-color);
+          padding: 11px 24px;
+          border: none;
+          border-radius: 12px 0 12px 0;
+          color: var(--secondary-color-two);
+          @include btActive;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+          transition: var(--basic);
+          &:hover {
+            border-radius: 0 12px 0 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+      .channel-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: disc;
+        padding: 20px;
+        li {
+          @include p2($fw: 300);
+        }
+      }
+      .left {
+        text-align: left;
+      }
+      hr {
+        border-color: var(--primary-color);
+        margin: 10px 0px;
+      }
+    }
+  }
+  .spectrum-existing-customer {
+    background: var(--secondary-color-two);
+    .channels {
+      background-color: var(--secondary-color-three);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+      .after-heading {
+        margin-top: 10px;
+        a {
+          @include p2($fw: 300);
+          color: #0070ff;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+      p {
+        span {
+          a {
+            @include p2($fw: 300);
+            color: var(--primary-color);
+            &:hover {
+              border-radius: 0 12px 0 12px;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      ul {
+        li {
+          @include p2($fw: 300);
+          span {
+            @include p2($fw: 300);
+            color: #0070ff;
+          }
+        }
+      }
+      .below-table {
+        text-align: center;
+      }
+      table {
+        tbody {
+          background-color: var(--secondary-color-three);
+        }
+      }
+      .btn {
+        overflow: hidden;
+        padding: 22px 0 22px 0;
+        @include p2($fw: 400);
+        color: var(--secondary-color-one);
+        text-transform: capitalize;
+
+        &:nth-of-type(1) {
+          color: #a5a5a5;
+          text-align: right;
+        }
+        a {
+          background: var(--primary-color);
+          padding: 11px 24px;
+          border: none;
+          border-radius: 12px 0 12px 0;
+          color: var(--secondary-color-two);
+          @include btActive;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+          transition: var(--basic);
+          &:hover {
+            border-radius: 0 12px 0 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+      .channel-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: disc;
+        padding: 20px;
+        li {
+          @include p2($fw: 300);
+        }
+      }
+      .left {
+        text-align: left;
+      }
+      hr {
+        border-color: var(--primary-color);
+        margin: 10px 0px;
+      }
+      .inner-channel-flex {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        .inner-channel-flex-div {
+          flex: auto;
+          p.after-heading {
+            @include p2($fw: 300);
+          }
+        }
+      }
+    }
+  }
+  .spectrum-deals-faq {
+    background: var(--secondary-color-three);
+    .accordion {
+      .item {
+        background: var(--secondary-color-two);
+      }
+    }
+  }
+  .spectrum-review-endnote {
+    padding: 80px 5%;
+    background: var(--secondary-color-two);
+    .endnote-container {
+      background: var(--secondary-color-three);
+      .bold {
+        @include p2($fw: 600);
+      }
+      .below-table {
+        @include p2($fw: 300);
+        margin-top: 10px;
+        font-style: italic;
+      }
+      ul {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        list-style: none;
+        margin-left: 0px;
+        margin-right: 0px;
+        li {
+          span {
+            a {
+              @include p2($fw: 400);
+              color: #0070ff;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      .endnote-review {
+        @include p1($fw: 300);
+      }
+    }
+  }
+}

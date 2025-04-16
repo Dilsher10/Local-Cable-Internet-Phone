@@ -1,0 +1,509 @@
+@import "../../mixins.scss";
+
+.cox-installation-guide {
+  position: relative;
+  .cox-costs-hero {
+    position: relative;
+    width: 100%;
+    height: 329px;
+    background: url('/hero-bg.svg') center,
+      linear-gradient(
+        to right,
+        var(--primary-color),
+        var(--secondary-color-one)
+      );
+    padding: 80px 5% 0 5%;
+    text-align: center;
+    h1 {
+      @include h2;
+      color: var(--secondary-color-two);
+      text-transform: capitalize;
+      margin-top: 20px;
+    }
+    & > p {
+      @include p1;
+      color: var(--secondary-color-two);
+      text-transform: capitalize;
+      line-height: 26px;
+      margin: 15px auto;
+    }
+  }
+  .best-internet-tv-offer {
+    background-color: var(--secondary-color-three);
+    padding: 80px 5% 20px 5%;
+    .cards {
+      margin-top: -200px;
+    }
+    p {
+      @include p3();
+      text-align: center;
+      font-style: italic;
+    }
+  }
+  .endnote-start {
+    background-color: var(--secondary-color-three);
+    .endnote-container {
+      img.coveragemap {
+        width: 100%;
+        margin-top: 15px;
+      }
+    }
+  }
+  .important-links {
+    .all-links {
+      @include flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      a {
+        padding: 12px;
+        margin: 12px;
+        @include p2($fw: 400);
+        text-decoration: underline;
+        color: var(--primary-color);
+        border: none;
+        border-radius: 24px;
+        background: #e6f1ff;
+        transition: var(--basic);
+        text-align: center;
+        &:hover {
+          color: var(--secondary-color-two);
+          background: var(--primary-color);
+        }
+      }
+    }
+  }
+  .cox-what-is-cox-connect {
+    background: var(--secondary-color-three);
+    .channels {
+      background: var(--secondary-color-two);
+      box-shadow: 0px 4px 4px 0px #00000024;
+      .after-heading {
+        margin-top: 10px;
+        a {
+          @include p2($fw: 300);
+          color: #0070ff;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+      .below-table {
+        text-align: left;
+      }
+      ul {
+        li {
+          @include p2($fw: 400);
+          margin-top: 5px;
+          a {
+            @include p2($fw: 400);
+            color: #0070ff;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .grid-ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .endnote-start {
+        margin-top: 15px;
+        .endnote-container {
+          background-color: var(--secondary-color-three);
+        }
+      }
+      .custom-table {
+        box-shadow: var(--secndary-shadow);
+        table {
+          thead {
+            tr {
+              th:nth-of-type(1) {
+                padding: 16px;
+              }
+              th {
+                .icon {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+          tbody {
+            background: var(--secondary-color-two);
+            tr {
+              td:nth-of-type(1) {
+                color: #000;
+                text-align: left;
+                padding-left: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .searchbar {
+      background: var(--secondary-color-two);
+      max-width: 600px;
+      margin-top: 15px;
+    }
+  }
+  .cox-installation-kit {
+    .channels {
+      background: var(--secondary-color-three);
+      box-shadow: 0px 4px 4px 0px #00000024;
+      .after-heading {
+        margin-top: 10px;
+        a {
+          @include p2($fw: 300);
+          color: #0070ff;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+      .below-table {
+        text-align: left;
+      }
+      ul {
+        li {
+          @include p2($fw: 400);
+          margin-top: 5px;
+          a {
+            @include p2($fw: 400);
+            color: #0070ff;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .grid-ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .endnote-start {
+        margin-top: 15px;
+        .endnote-container {
+          background-color: var(--secondary-color-three);
+        }
+      }
+      .custom-table {
+        box-shadow: var(--secndary-shadow);
+        table {
+          thead {
+            tr {
+              th:nth-of-type(1) {
+                padding: 16px;
+              }
+              th {
+                .icon {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+          tbody {
+            background: var(--secondary-color-two);
+            tr {
+              td:nth-of-type(1) {
+                color: #000;
+                text-align: left;
+                padding-left: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .colums-division {
+      display: flex;
+      align-items: center;
+      h5 {
+        @include p2($fw: 600);
+      }
+      div {
+        flex: 1;
+        .after-heading {
+          margin-top: 10px;
+          @include p2($fw: 300);
+          a {
+            @include p2($fw: 300);
+            color: #0070ff;
+            &:hover {
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  .cox-device-type {
+    background: var(--secondary-color-three);
+    .channels {
+      background: var(--secondary-color-two);
+      box-shadow: 0px 4px 4px 0px #00000024;
+      .after-heading {
+        margin-top: 10px;
+        a {
+          @include p2($fw: 300);
+          color: #0070ff;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+      .below-table {
+        text-align: left;
+      }
+      ul {
+        li {
+          @include p2($fw: 400);
+          margin-top: 5px;
+          a {
+            @include p2($fw: 400);
+            color: #0070ff;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .grid-ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .endnote-start {
+        margin-top: 15px;
+        .endnote-container {
+          background-color: var(--secondary-color-three);
+        }
+      }
+      .custom-table {
+        box-shadow: var(--secndary-shadow);
+        table {
+          thead {
+            tr {
+              th:nth-of-type(1) {
+                padding: 16px;
+              }
+              th {
+                .icon {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+          tbody {
+            background: var(--secondary-color-two);
+            tr {
+              td:nth-of-type(1) {
+                color: #000;
+                text-align: left;
+                padding-left: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .searchbar {
+      background: var(--secondary-color-two);
+      max-width: 600px;
+      margin-top: 15px;
+    }
+  }
+  .cox-installation-a-icox-contour {
+    background: var(--secondary-color-two);
+    .channels {
+      background: var(--secondary-color-three);
+      box-shadow: 0px 4px 4px 0px #00000024;
+      .after-heading {
+        margin-top: 10px;
+        a {
+          @include p2($fw: 300);
+          color: #0070ff;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+      .below-table {
+        text-align: left;
+      }
+      ul {
+        li {
+          @include p2($fw: 400);
+          margin-top: 5px;
+          a {
+            @include p2($fw: 400);
+            color: #0070ff;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .grid-ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .endnote-start {
+        margin-top: 15px;
+        .endnote-container {
+          background-color: var(--secondary-color-three);
+        }
+      }
+      .custom-table {
+        box-shadow: var(--secndary-shadow);
+        table {
+          thead {
+            tr {
+              th:nth-of-type(1) {
+                padding: 16px;
+              }
+              th {
+                .icon {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+          tbody {
+            background: var(--secondary-color-two);
+            tr {
+              td:nth-of-type(1) {
+                color: #000;
+                text-align: left;
+                padding-left: 16px;
+              }
+            }
+          }
+        }
+      }
+      img.mark {
+        width: 44px;
+        margin: 0px 0px 24px;
+      }
+    }
+  }
+  .cox-installing-a-cox-wireless-4k-contour-stream-player {
+    background: var(--secondary-color-three);
+    .channels {
+      background: var(--secondary-color-two);
+      box-shadow: 0px 4px 4px 0px #00000024;
+      .after-heading {
+        margin-top: 10px;
+        a {
+          @include p2($fw: 300);
+          color: #0070ff;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+      .below-table {
+        text-align: left;
+      }
+      ul {
+        li {
+          @include p2($fw: 400);
+          margin-top: 5px;
+          a {
+            @include p2($fw: 400);
+            color: #0070ff;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .grid-ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .endnote-start {
+        margin-top: 15px;
+        .endnote-container {
+          background-color: var(--secondary-color-three);
+        }
+      }
+      .custom-table {
+        box-shadow: var(--secndary-shadow);
+        table {
+          thead {
+            tr {
+              th:nth-of-type(1) {
+                padding: 16px;
+              }
+              th {
+                .icon {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+          tbody {
+            background: var(--secondary-color-two);
+            tr {
+              td:nth-of-type(1) {
+                color: #000;
+                text-align: left;
+                padding-left: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .searchbar {
+      background: var(--secondary-color-two);
+      max-width: 600px;
+      margin-top: 15px;
+    }
+  }
+  .cox-faq {
+    .accordion {
+      .item {
+        background: var(--secondary-color-three);
+        
+      }
+    }
+  }
+  .cox-endnote {
+    padding: 80px 5%;
+    background: var(--secondary-color-three);
+    .endnote-container {
+      background: var(--secondary-color-two);
+      ul {
+        list-style: none;
+        margin-top: 15px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 15px;
+        li {
+          span {
+            a {
+              @include p2($fw: 400);
+              color: #0070ff;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      .endnote-review {
+        @include p1($fw: 300);
+      }
+      b{
+        @include p2($fw: 600);       
+      }
+    }
+  }
+}

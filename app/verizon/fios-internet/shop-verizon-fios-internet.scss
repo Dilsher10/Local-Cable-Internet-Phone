@@ -1,0 +1,179 @@
+@import "../../mixins.scss";
+
+.shop-verizon-fios-internet {
+  position: relative;
+  .best-tv-service-offers {
+    background: var(--secondary-color-three);
+  }
+  .verizon-blank-with-table {
+    background: var(--secondary-color-two);
+    .channels {
+      background-color: var(--secondary-color-three);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+      img.mark {
+        width: 44px;
+        margin: 0px 0px 25px;
+      }
+      a {
+        @include p2($fw: 400);
+        color: #0070ff;
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+      ul {
+        li {
+          @include p3();
+          font-weight: 400;
+          span {
+            a {
+              @include p2($fw: 300);
+              color: #0070ff;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      hr.hr {
+        border-color: #0070ff;
+        margin: 15px 0px;
+      }
+      .btn {
+        overflow: hidden;
+        padding: 22px 0 22px 0;
+        @include p2($fw: 400);
+        color: var(--secondary-color-one);
+        text-transform: capitalize;
+
+        &:nth-of-type(1) {
+          color: #a5a5a5;
+          text-align: right;
+        }
+        a {
+          background: var(--primary-color);
+          padding: 11px 24px;
+          border: none;
+          border-radius: 12px 0 12px 0;
+          color: var(--secondary-color-two);
+          @include btActive;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+          transition: var(--basic);
+          &:hover {
+            border-radius: 0 12px 0 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    table {
+      tbody {
+        background-color: var(--secondary-color-three);
+      }
+    }
+    p.below-table {
+      text-align: center;
+      font-style: italic;
+      @include p3();
+    }
+  }
+  .quick-answers {
+    background: var(--secondary-color-three);
+    .cards {
+      margin-top: 20px;
+      @include flex();
+      flex-wrap: wrap;
+      .blog-card {
+        max-width: 600px;
+        min-height: 410px;
+        max-height: 410px;
+      }
+    }
+  }
+  .free-verizon-internet {
+    .row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      flex-wrap: nowrap;
+      .columns {
+        flex: 1;
+        box-sizing: border-box;
+        background: var(--secondary-color-three);
+        box-shadow: var(--primary-shadow);
+        border-radius: 24px;
+        padding: 40px;
+        margin: 10px;
+        height: 314px;
+        h3 {
+          @include h5();
+        }
+        p {
+          @include p2($fw: 400);
+          b {
+            @include p2($fw: bold);
+          }
+          span {
+            @include p3($fw: 300);
+          }
+        }
+        h6 {
+          @include p2($fw: medium);
+        }
+        ul {
+          li {
+            @include p2($fw: 400);
+          }
+        }
+        img{
+          width: 33.56px;
+          height: 40px;
+          margin: 0px 0px 20px 0px;
+        }
+      }
+      .blue-bg{
+        background: var(--primary-color);
+        color: white;
+      }
+    }
+  }
+  .verizon-faq {
+    background: var(--secondary-color-three);
+    .accordion {
+      .item {
+        background: var(--secondary-color-two);
+      }
+    }
+  }
+}
+// tablet
+@media (min-width: 441px) and (max-width: 820px){
+  .shop-verizon-fios-internet{
+    .free-verizon-internet{
+      .row{
+        grid-template-columns: repeat(1, 1fr) !important;
+        .columns{
+          width: 100%;
+          height: auto !important;
+        }
+      }
+    }
+  }
+}
+
+// mobile
+@media (max-width: 440px){       
+  .shop-verizon-fios-internet{
+    .free-verizon-internet{
+      .row{
+        grid-template-columns: repeat(1, 1fr) !important;
+        .columns{
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,302 @@
+@import "../../mixins.scss";
+
+.shop-verizon-fios-tv {
+  position: relative;
+  .best-tv-service-offers {
+    background: var(--secondary-color-three);
+  }
+  .verizon-tv {
+    background: var(--secondary-color-two);
+    .channels {
+      background-color: var(--secondary-color-three);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+      img.mark {
+        width: 44px;
+        margin: 0px 0px 25px;
+      }
+      a {
+        @include p2($fw: 400);
+        color: #0070ff;
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+      ul {
+        li {
+          @include p3();
+          font-weight: 400;
+          span {
+            a {
+              @include p2($fw: 300);
+              color: #0070ff;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      hr.hr {
+        border-color: #0070ff;
+        margin: 15px 0px;
+      }
+      .btn {
+        overflow: hidden;
+        padding: 22px 0 22px 0;
+        @include p2($fw: 400);
+        color: var(--secondary-color-one);
+        text-transform: capitalize;
+
+        &:nth-of-type(1) {
+          color: #a5a5a5;
+          text-align: right;
+        }
+        a {
+          background: var(--primary-color);
+          padding: 11px 24px;
+          border: none;
+          border-radius: 12px 0 12px 0;
+          color: var(--secondary-color-two);
+          @include btActive;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+          transition: var(--basic);
+          &:hover {
+            border-radius: 0 12px 0 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    table {
+      tbody {
+        background-color: var(--secondary-color-three);
+      }
+    }
+    p.below-table {
+      text-align: center;
+      font-style: italic;
+      @include p3();
+    }
+  }
+  .verizon-tv-package-channels {
+    background: var(--secondary-color-three);
+    .channels {
+      background-color: var(--secondary-color-two);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+      img.mark {
+        width: 44px;
+        margin: 0px 0px 25px;
+      }
+      a {
+        @include p2($fw: 400);
+        color: #0070ff;
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+      ul {
+        li {
+          @include p3();
+          font-weight: 400;
+          span {
+            a {
+              @include p2($fw: 300);
+              color: #0070ff;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      hr.hr {
+        border-color: #0070ff;
+        margin: 15px 0px;
+      }
+      .btn {
+        overflow: hidden;
+        padding: 22px 0 22px 0;
+        @include p2($fw: 400);
+        color: var(--secondary-color-one);
+        text-transform: capitalize;
+
+        &:nth-of-type(1) {
+          color: #a5a5a5;
+          text-align: right;
+        }
+        a {
+          background: var(--primary-color);
+          padding: 11px 24px;
+          border: none;
+          border-radius: 12px 0 12px 0;
+          color: var(--secondary-color-two);
+          @include btActive;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+          transition: var(--basic);
+          &:hover {
+            border-radius: 0 12px 0 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    table {
+      tbody {
+        background-color: var(--secondary-color-three);
+      }
+    }
+    p.below-table {
+      text-align: center;
+      font-style: italic;
+      @include p3();
+    }
+  }
+  .verizon-blank {
+    background: var(--secondary-color-two);
+    .channels {
+      background-color: var(--secondary-color-three);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+      img.mark {
+        width: 44px;
+        margin: 0px 0px 25px;
+      }
+      a {
+        @include p2($fw: 400);
+        color: #0070ff;
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+      ul {
+        li {
+          @include p3();
+          font-weight: 400;
+          span {
+            a {
+              @include p2($fw: 300);
+              color: #0070ff;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      hr.hr {
+        border-color: #0070ff;
+        margin: 15px 0px;
+      }
+      .btn {
+        overflow: hidden;
+        padding: 22px 0 22px 0;
+        @include p2($fw: 400);
+        color: var(--secondary-color-one);
+        text-transform: capitalize;
+
+        &:nth-of-type(1) {
+          color: #a5a5a5;
+          text-align: right;
+        }
+        a {
+          background: var(--primary-color);
+          padding: 11px 24px;
+          border: none;
+          border-radius: 12px 0 12px 0;
+          color: var(--secondary-color-two);
+          @include btActive;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+          transition: var(--basic);
+          &:hover {
+            border-radius: 0 12px 0 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .verizon-tv-features {
+    background: var(--secondary-color-three);
+    .channels {
+      background-color: var(--secondary-color-two);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+      img.mark {
+        width: 44px;
+        margin: 0px 0px 25px;
+      }
+      a {
+        @include p2($fw: 400);
+        color: #0070ff;
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+      ul {
+        li {
+          @include p3();
+          font-weight: 400;
+          span {
+            a {
+              @include p2($fw: 300);
+              color: #0070ff;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      hr.hr {
+        border-color: #0070ff;
+        margin: 15px 0px;
+      }
+      .btn {
+        overflow: hidden;
+        padding: 22px 0 22px 0;
+        @include p2($fw: 400);
+        color: var(--secondary-color-one);
+        text-transform: capitalize;
+
+        &:nth-of-type(1) {
+          color: #a5a5a5;
+          text-align: right;
+        }
+        a {
+          background: var(--primary-color);
+          padding: 11px 24px;
+          border: none;
+          border-radius: 12px 0 12px 0;
+          color: var(--secondary-color-two);
+          @include btActive;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+          transition: var(--basic);
+          &:hover {
+            border-radius: 0 12px 0 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    table {
+      tbody {
+        background-color: var(--secondary-color-three);
+      }
+    }
+    p.below-table {
+      text-align: center;
+      font-style: italic;
+      @include p3();
+    }
+  }
+  .verizon-faq {
+    background: var(--secondary-color-two);
+    .accordion {
+      .item {
+        background: var(--secondary-color-three);
+      }
+    }
+  }
+}

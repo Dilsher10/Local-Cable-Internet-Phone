@@ -1,0 +1,482 @@
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Home from "../pages/main/home/Home";
+import Tv from "../pages/main/tv/Tv";
+import Internet from "../pages/main/internet/Internet";
+import Streaming from "../pages/main/streaming/Streaming";
+import Resources from "../pages/main/resources/Resources";
+import WhatToWatch from "../pages/main/what-to-watch/WhatToWatch";
+import XfinityReview from "../pages/xfinity/review/XfinityReview";
+import XfinityInternet from "../pages/xfinity/internet/XfinityInternet";
+import XfinityTv from "../pages/xfinity/tv/XfinityTv";
+import XfinityDeals from "../pages/xfinity/deals/XfinityDeals";
+import XfinityChannelLinup from "../pages/xfinity/channel-linup/XfinityChannelLinup";
+import XfinityMobile from "../pages/xfinity/mobile/XfinityMobile";
+import XfinityBundles from "../pages/xfinity/bundles/XfinityBundles";
+import XfinityVoice from "../pages/xfinity/voice/XfinityVoice";
+import XfinityAvailability from "../pages/xfinity/availability/XfinityAvailability";
+import XfinityHiddenCosts from "../pages/xfinity/hidden-costs/XfinityHiddenCosts";
+import XfinityCustomerService from "../pages/xfinity/customer-service/XfinityCustomerService";
+import XfinityInternetReview from "../pages/xfinity/internet-review/XfinityInternetReview";
+import XfinityTvReview from "../pages/xfinity/tv-review/XfinityTvReview";
+import XfinityBundlesReview from "../pages/xfinity/bundles-review/XfinityBundlesReview";
+import SpectrumReview from "../pages/spectrum/review/SpectrumReview";
+import SpectrumInternet from "../pages/spectrum/internet/SpectrumInternet";
+import SpectrumTv from "../pages/spectrum/tv/SpectrumTv";
+import SpectrumDeals from "../pages/spectrum/deals/SpectrumDeals";
+import SpectrumBundles from "../pages/spectrum/bundles/SpectrumBundles";
+import SpectrumMobile from "../pages/spectrum/mobile/SpectrumMobile";
+import SpectrumChannelLineUps from "../pages/spectrum/channel-lineups/SpectrumChannelLineUps";
+import SpectrumVoice from "../pages/spectrum/voice/SpectrumVoice";
+import SpectrumAvailability from "../pages/spectrum/availability/SpectrumAvailability";
+import SpectrumInternetReview from "../pages/spectrum/internet-review/SpectrumInternetReview";
+import SpectrumTvReview from "../pages/spectrum/tv-review/SpectrumTvReview";
+import SpectrumInternetCheapPlan from "../pages/spectrum/internet-plan/SpectrumInternetCheapPlan";
+import SpectrumBundlesReview from "../pages/spectrum/bundles-review/SpectrumBundlesReview";
+import SpectrumMobileReview from "../pages/spectrum/mobile-review/SpectrumMobileReview";
+import Dish from "../pages/dish/shop/Dish";
+import DishReview from "../pages/dish/review/DishReview";
+import DishInternet from "../pages/dish/internet/DishInternet";
+import DishDeals from "../pages/dish/deals/DishDeals";
+import DishChannelLineUp from "../pages/dish/channel-lineup/DishChannelLineUp";
+import DishLatinoEspanol from "../pages/dish/latino-espanol/DishLatinoEspanol";
+import DishLatino from "../pages/dish/latino/DishLatino";
+import DishAnywhereApp from "../pages/dish/anywhere-app/DishAnywhereApp";
+import { DishHopper } from "../pages/dish/hopper-3/DishHopper";
+import DishCustomerService from "../pages/dish/customer-service/DishCustomerService";
+import DirectTvReview from "../pages/direct-tv/review/DirectTvReview";
+import DirectTvSports from "../pages/direct-tv/sports/DirectTvSports";
+import DirectTvStream from "../pages/direct-tv/stream/DirectTvStream";
+import DirectTvTroubleshootingGuide from "../pages/direct-tv/troubleshooting-guide/DirectTvTroubleshootingGuide";
+import DirectTvNFLSundayTicket from "../pages/direct-tv/nfl-sunday-ticket/DirectTvNFLSundayTicket";
+import DirectTvHiddenCosts from "../pages/direct-tv/hidden-costs/DirectTvHiddenCosts";
+import DirectTvGenie from "../pages/direct-tv/genie/DirectTvGenie";
+import DirectTvDeals from "../pages/direct-tv/deals/DirectTvDeals";
+import DirectTvCustomerService from "../pages/direct-tv/customer-service/DirectTvCustomerService";
+import DirectTvChannelLineUp from "../pages/direct-tv/channel-lineup/DirectTvChannelLineUp";
+import DirectTvBundles from "../pages/direct-tv/bundles/DirectTvBundles";
+import OptimumReview from "../pages/optimum/review/OptimumReview";
+import OptimumAvailabilityMap from "../pages/optimum/availability/OptimumAvailabilityMap";
+import OptimumBundleReview from "../pages/optimum/bundle-review/OptimumBundleReview";
+import OptimumBundles from "../pages/optimum/bundles/OptimumBundles";
+import OptimumChannelLineUp from "../pages/optimum/channel-lineup/OptimumChannelLineUp";
+import OptimumCustomerService from "../pages/optimum/customer-service/OptimumCustomerService";
+import OptimumDeals from "../pages/optimum/deals/OptimumDeals";
+import OptimumHiddenCosts from "../pages/optimum/hidden-costs/OptimumHiddenCosts";
+import OptimumInternet from "../pages/optimum/internet/OptimumInternet";
+import OptimumInternetReview from "../pages/optimum/internet-review/OptimumInternetReview";
+import OptimumMobile from "../pages/optimum/mobile/OptimumMobile";
+import OptimumShopMobile from "../pages/optimum/shop-mobile/OptimumShopMobile";
+import OptimumSmartWifi from "../pages/optimum/smart-wifi/OptimumSmartWifi";
+import OptimumTv from "../pages/optimum/tv/OptimumTv";
+import OptimumTvReview from "../pages/optimum/tv-review/OptimumTvReview";
+import CoxReview from "../pages/cox/review/CoxReview";
+import CoxInternetReview from "../pages/cox/internet-review/CoxInternetReview";
+import CoxTv from "../pages/cox/tv/CoxTv";
+import CoxDeals from "../pages/cox/deals/CoxDeals";
+import CoxBundleReview from "../pages/cox/bundle-review/CoxBundleReview";
+import CoxChannelLineUp from "../pages/cox/channel-lineup/CoxChannelLineUp";
+import CoxAvailability from "../pages/cox/availability/CoxAvailability";
+import CoxInstallationGuide from "../pages/cox/installation-guide/CoxInstallationGuide";
+import CoxTroubleShootingGuide from "../pages/cox/troubleshooting-guide/CoxTroubleShootingGuide";
+import CoxCustomerService from "../pages/cox/customer-service/CoxCustomerService";
+import CoxInternet from "../pages/cox/internet/CoxInternet";
+import CoxBundles from "../pages/cox/bundles/CoxBundles";
+import VerizonReview from "../pages/verizon/review/VerizonReview";
+import ShopVerizonFiosInternet from "../pages/verizon/fios-internet/ShopVerizonFiosInternet";
+import Verizon5gHomeInternetReview from "../pages/verizon/5g-home-internet-review/Verizon5gHomeInternetReview";
+import ShopVerizon5gHomeInternet from "../pages/verizon/5g-home-internet/ShopVerizon5gHomeInternet";
+import ShopVerizonFiosTv from "../pages/verizon/fios-tv/ShopVerizonFiosTv";
+import ShopVerizonWireless from "../pages/verizon/wireless/ShopVerizonWireless";
+import ShopVerizonDeals from "../pages/verizon/deals/ShopVerizonDeals";
+import ShopVerizonBundles from "../pages/verizon/bundles/ShopVerizonBundles";
+import VerizonChannelLineup from "../pages/verizon/channel-lineup/VerizonChannelLineup ";
+import VerizonFiosPhone from "../pages/verizon/fios-phone/VerizonFiosPhone";
+import VerizonCustomerService from "../pages/verizon/customer-service/VerizonCustomerService";
+import VerizonFiosInternetReview from "../pages/verizon/fios-internet-review/VerizonFiosInternetReview";
+import VerizonFiosTvReview from "../pages/verizon/fios-tv-review/VerizonFiosTvReview";
+import VerizonFiosBundlesReview from "../pages/verizon/fios-bundles-review/VerizonFiosBundlesReview";
+import AtandtReview from "../pages/at&t/review/At&tReview";
+import AtandtInternet from "../pages/at&t/internet/At&tInternet";
+import AtandtDeals from "../pages/at&t/deals/At&tDeals";
+import AtandtBundles from "../pages/at&t/bundles/At&tBundles";
+import AtandtWireless from "../pages/at&t/wireless/At&tWireless";
+import AtandtBusiness from "../pages/at&t/business/At&tBusiness";
+import AtandtHiddenCost from "../pages/at&t/hidden-costs/At&tHiddenCost";
+import AtandtTroubleshootingGuide from "../pages/at&t/troubleshooting-guide/At&tTroubleshootingGuide";
+import AtandtCustomerService from "../pages/at&t/customer-service/At&tCustomerService";
+import AtandtInternetReveiw from "../pages/at&t/internet-review/At&tInternetReveiw";
+import AtandtInternetAirReview from "../pages/at&t/internet-air-review/At&tInternetAirReview";
+import CheapAtandtInternet from "../pages/at&t/cheap-at&t-internet/CheapAt&tInternet";
+import AtandtWirelessReview from "../pages/at&t/wireless-review/At&tWirelessReview";
+import AtandtBundlesReview from "../pages/at&t/bundles-review/At&tBundlesReview";
+import TMobileOverview from "../pages/t-mobile/overview/TMobileOverview";
+import TMobileShop5gHomeInternet from "../pages/t-mobile/shop-5g-home-internet/TMobileShop5gHomeInternet";
+import TMobileDeals from "../pages/t-mobile/deals/TMobileDeals";
+import TMobileHotSpots from "../pages/t-mobile/hotspots/TMobileHotSpots";
+import TMobileAvailabilityMap from "../pages/t-mobile/availability-map/TMobileAvailabilityMap";
+import TMobileCustomerService from "../pages/t-mobile/customer-service/TMobileCustomerService";
+import TMobile5gHomeInternetReview from "../pages/t-mobile/5g-home-internet-review/TMobile5gHomeInternetReview";
+import ViasatReview from "../pages/viasat/review/ViasatReview";
+import HughesnetReview from "../pages/hughesnet/review/HughesnetReview";
+import HughesnetInternet from "../pages/hughesnet/internet/HughesnetInternet";
+import GoogleFiber from "../pages/google-fiber-internet/google-fiber/GoogleFiber";
+import GoogleFiberInternetReview from "../pages/google-fiber-internet/review/GoogleFiberInternetReview";
+import GoogleFiberInternetReviewAvailabilityMap from "../pages/google-fiber-internet/availability-map/GoogleFiberInternetReviewAvailabilityMap";
+import ZiplyFiberReview from "../pages/ziply-fiber/review/ZiplyFiberReview";
+import ZiplyFiberInternet from "../pages/ziply-fiber/internet/ZiplyFiberInternet";
+import ZiplyFiberCustomerService from "../pages/ziply-fiber/customer-service/ZiplyFiberCustomerService";
+import ZiplyFiberAvailabilityMap from "../pages/ziply-fiber/availability-map/ZiplyFiberAvailabilityMap";
+import SparkLightReview from "../pages/sparklight/review/SparkLightReview";
+import SparkLightInternet from "../pages/sparklight/internet/SparkLightInternet";
+import SparkLightTv from "../pages/sparklight/tv/SparkLightTv";
+import SparkLightBundles from "../pages/sparklight/bundles/SparkLightBundles";
+import SparkLightChannelLineUp from "../pages/sparklight/channel-lineup/SparkLightChannelLineUp";
+import SparkLightPhone from "../pages/sparklight/phone/SparkLightPhone";
+import SparkLightCustomerService from "../pages/sparklight/customer-service/SparkLightCustomerService";
+import CenturyLinkReview from "../pages/centurylink/review/CenturyLinkReview";
+import CenturyLinkPhone from "../pages/centurylink/phone/CenturyLinkPhone";
+import CenturyLinkInternetReview from "../pages/centurylink/internet-review/CenturyLinkInternetReview";
+import CenturyLinkInternet from "../pages/centurylink/internet/CenturyLinkInternet";
+import CenturyLinkInstallationGuide from "../pages/centurylink/installation-guide/CenturyLinkInstallationGuide";
+import CenturyLinkCustomerService from "../pages/centurylink/customer-service/CenturyLinkCustomerService";
+import CenturyLinkBundlesReview from "../pages/centurylink/bundles-review/CenturyLinkBundlesReview";
+import CenturyLinkBundles from "../pages/centurylink/bundles/CenturyLinkBundles";
+import YoutubeTvReveiw from "../pages/youtube-tv/review/YoutubeTvReveiw";
+import YoutubeTvBundles from "../pages/youtube-tv/bundles/YoutubeTvBundles";
+import YoutubeTvNflSundayTicket from "../pages/youtube-tv/nfl-sunday-ticket/YoutubeTvNflSundayTicket";
+import YoutubeTvChannelReview from "../pages/youtube-tv/channel-review/YoutubeTvChannelReview";
+import YoutubeTvWhatToWatch from "../pages/youtube-tv/what-to-watch/YoutubeTvWhatToWatch";
+import { AmazonPrimeVideo } from "../pages/amazon-prime-video/review/AmazonPrimeVideo";
+import PhiloChannelLineUp from "../pages/philo/channel-lineup/PhiloChannelLineUp";
+import PhiloReview from "../pages/philo/review/PhiloReview";
+import PhiloDeals from "../pages/philo/deals/PhiloDeals";
+import NetflixReview from "../pages/netflix/reveiw/NetflixReview";
+import NetflixWhatToWatch from "../pages/netflix/what-to-watch/NetflixWhatToWatch";
+import FuboReview from "../pages/fubo/review/FuboReview";
+import FuboChannelLineUp from "../pages/fubo/channel-lineup/FuboChannelLineUp";
+import FuboSports from "../pages/fubo/sports/FuboSports";
+import FuboSoccerOn from "../pages/fubo/soccer-on/FuboSoccerOn";
+import BestOnDemandStreamingServices from "../pages/best-on-demand-streaming-services/BestOnDemandStreamingServices ";
+import SlingTvReview from "../pages/sling-tv/review/SlingTvReview";
+import SlingTvDeals from "../pages/sling-tv/deals/SlingTvDeals";
+import SlingTvChannels from "../pages/sling-tv/channels/SlingTvChannels";
+import SlingTvLocalChannels from "../pages/sling-tv/local-channels/SlingTvLocalChannels";
+import SlingTvFree from "../pages/sling-tv/free/SlingTvFree";
+import SlingTvAddOnPackages from "../pages/sling-tv/add-on-packages/SlingTvAddOnPackages";
+import SlingTvWhatToWatch from "../pages/sling-tv/what-to-watch/SlingTvWhatToWatch";
+import SlingTvCustomerService from "../pages/sling-tv/customer-service/SlingTvCustomerService";
+import PeacockReview from "../pages/peacock/review/PeacockReview";
+import PeacockLiveTv from "../pages/peacock/live-tv/PeacockLiveTv";
+import PeacockOriginals from "../pages/peacock/originals/PeacockOriginals";
+import PeacockWhatToWatch from "../pages/peacock/what-to-watch/PeacockWhatToWatch";
+import PeacockWweOn from "../pages/peacock/wwe-on/PeacockWweOn";
+import PeacockMlbOn from "../pages/peacock/mlb-on/PeacockMlbOn";
+import MaxReview from "../pages/max/review/MaxReview";
+import MaxDeals from "../pages/max/deals/MaxDeals";
+import MaxChannels from "../pages/max/channels/MaxChannels";
+import MaxSportsOn from "../pages/max/sports-on/MaxSportsOn";
+import MaxWhatToWatch from "../pages/max/what-to-watch/MaxWhatToWatch";
+import MaxDcUniverse from "../pages/max/dc-universe/MaxDcUniverse";
+import DisneyReview from "../pages/disney/review/DisneyReview";
+import DisneyBundlesAndDeals from "../pages/disney/bundles-and-deals/DisneyBundlesAndDeals";
+import DisneyMovies from "../pages/disney/movies/DisneyMovies";
+import DisneyWhatToWatch from "../pages/disney/what-to-watch/DisneyWhatToWatch";
+import DisneyTroubleshootingGuide from "../pages/disney/troubleshooting-guide/DisneyTroubleshootingGuide";
+import DisneyOriginals from "../pages/disney/originals/DisneyOriginals";
+import HuluReview from "../pages/hulu/review/HuluReview";
+import HuluLiveTvReview from "../pages/hulu/live-tv-review/HuluLiveTvReview";
+import HuluDeals from "../pages/hulu/deals/HuluDeals";
+import HuluBundles from "../pages/hulu/bundles/HuluBundles";
+import HuluChannelLineUp from "../pages/hulu/channel-lineup/HuluChannelLineUp";
+import HuluWhatToWatch from "../pages/hulu/what-to-watch/HuluWhatToWatch";
+import HuluSupportedDevices from "../pages/hulu/supported-devices/HuluSupportedDevices";
+import HuluTroubleshootingGuide from "../pages/hulu/troubleshooting-guide/HuluTroubleshootingGuide";
+import BestLiveTvStreamingServices from "../pages/best-live-tv-streaming-services/BestLiveTvStreamingServices";
+import BestStreamingServicesForSports from "../pages/best-streaming-services-for-sports/BestStreamingServicesForSports";
+import Sports from "../pages/sports/Sports";
+import ParamountReview from "../pages/paramount/review/ParamountReview";
+import ParamountDeals from "../pages/paramount/deals/ParamountDeals";
+import ParamountBundles from "../pages/paramount/bundles/ParamountBundles";
+import ParamountChannels from "../pages/paramount/channels/ParamountChannels";
+import ParamountOriginals from "../pages/paramount/originals/ParamountOriginals";
+import ParamountWhatToWatch from "../pages/paramount/what-to-watch/ParamountWhatToWatch";
+import ParamountNfl from "../pages/paramount/nfl/ParamountNfl";
+import ParamountShows from "../pages/paramount/shows/ParamountShows";
+import ParamountMovies from "../pages/paramount/movies/ParamountMovies";
+
+
+const Routers = () => {
+  return (
+    <Routes>
+      {/* Main Pages */}
+      <Route path="/" element={<Home />} />
+      <Route path="/tv" element={<Tv />} />
+      <Route path="/internet" element={<Internet />} />
+      <Route path="/streaming" element={<Streaming />} />
+      <Route path="/what-to-watch" element={<WhatToWatch />} />
+      <Route path="/resources" element={<Resources />} />
+
+      {/* Xfinity Pages */}
+      <Route path="/xfinity" element={<XfinityReview />} />
+      <Route path="/xfinity/internet" element={<XfinityInternet />} />
+      <Route path="/xfinity/cable-tv" element={<XfinityTv />} />
+      <Route path="/xfinity/promotions" element={<XfinityDeals />} />
+      <Route path="/xfinity/channel-linup" element={<XfinityChannelLinup />} />
+      <Route path="/xfinity/mobile" element={<XfinityMobile />} />
+      <Route path="/xfinity/bundles" element={<XfinityBundles />} />
+      <Route path="/xfinity/voice" element={<XfinityVoice />} />
+      <Route path="/xfinity/availability" element={<XfinityAvailability />} />
+      <Route path="/xfinity/hidden-costs" element={<XfinityHiddenCosts />} />
+      <Route path="/xfinity/phone-number" element={<XfinityCustomerService />} />
+      <Route path="/xfinity/internet-review" element={<XfinityInternetReview />} />
+      <Route path="/xfinity/tv-review" element={<XfinityTvReview />} />
+      <Route path="/xfinity/bundles-review" element={<XfinityBundlesReview />} />
+
+      {/* Spectrum Pages */}
+      <Route path="/spectrum" element={<SpectrumReview/>} />
+      <Route path="/spectrum/internet" element={<SpectrumInternet/>} />
+      <Route path="/spectrum/cabel-tv" element={<SpectrumTv/>} />
+      <Route path="/spectrum/promotions" element={<SpectrumDeals/>} />
+      <Route path="/spectrum/bundles" element={<SpectrumBundles/>} />
+      <Route path="/spectrum/mobile" element={<SpectrumMobile/>} />
+      <Route path="/spectrum/channel-lineup" element={<SpectrumChannelLineUps/>} />
+      <Route path="/spectrum/voice" element={<SpectrumVoice/>} />
+      <Route path="/spectrum/availability" element={<SpectrumAvailability/>} />
+      <Route path="/spectrum/internet-review" element={<SpectrumInternetReview/>} />
+      <Route path="/spectrum/tv-review" element={<SpectrumTvReview/>} />
+      <Route path="/spectrum/internet-cheap-plan" element={<SpectrumInternetCheapPlan/>} />
+      <Route path="/spectrum/bundles-review" element={<SpectrumBundlesReview/>} />
+      <Route path="/spectrum/mobile-review" element={<SpectrumMobileReview/>} />
+
+      {/* Dish Pages */}
+      <Route path="/dish/" element={<Dish/>}/>
+      <Route path="/dish/review" element={<DishReview/>}/>
+      <Route path="/dish/internet" element={<DishInternet/>}/>
+      <Route path="/dish/deals" element={<DishDeals/>}/>
+      <Route path="/dish/channel-lineup" element={<DishChannelLineUp/>}/>
+      <Route path="/dish/latino-espanol" element={<DishLatinoEspanol/>}/>
+      <Route path="/dish/latino" element={<DishLatino/>}/>
+      <Route path="/dish/anywhere-app" element={<DishAnywhereApp/>}/>
+      <Route path="/dish/hopper-3" element={<DishHopper/>}/>
+      <Route path="/dish/phone-number" element={<DishCustomerService/>}/>
+
+       {/* Direct Tv Pages */}
+       <Route path="/directtv" element={<DirectTvReview/>}/>
+       <Route path="/directtv/sports" element={<DirectTvSports/>}/>
+       <Route path="/directtv/stream" element={<DirectTvStream/>}/>
+       <Route path="/directtv/troubleshooting" element={<DirectTvTroubleshootingGuide/>}/>
+       <Route path="/directtv/nfl-sunday-ticket" element={<DirectTvNFLSundayTicket/>}/>
+       <Route path="/directtv/hidden-costs" element={<DirectTvHiddenCosts/>}/>
+       <Route path="/directtv/genie" element={<DirectTvGenie/>}/>
+       <Route path="/directtv/deals" element={<DirectTvDeals/>}/>
+       <Route path="/directtv/phone-number" element={<DirectTvCustomerService/>}/>
+       <Route path="/directtv/channel-lineup" element={<DirectTvChannelLineUp/>}/>
+       <Route path="/directtv/bundles" element={<DirectTvBundles/>}/>
+
+       {/* Optimum Pages */}
+       <Route path="/optimum" element={<OptimumReview/>}/>
+       <Route path="/optimum/availability" element={<OptimumAvailabilityMap/>}/>
+       <Route path="/optimum/bundle-review" element={<OptimumBundleReview/>}/>
+       <Route path="/optimum/bundles" element={<OptimumBundles/>}/>
+       <Route path="/optimum/channel-lineup" element={<OptimumChannelLineUp/>}/>
+       <Route path="/optimum/phone-number" element={<OptimumCustomerService/>}/>
+       <Route path="/optimum/deals" element={<OptimumDeals/>}/>
+       <Route path="/optimum/hidden-costs" element={<OptimumHiddenCosts/>}/>
+       <Route path="/optimum/internet" element={<OptimumInternet/>}/>
+       <Route path="/optimum/internet-review" element={<OptimumInternetReview/>}/>
+       <Route path="/optimum/mobile" element={<OptimumMobile/>}/>
+       <Route path="/optimum/review" element={<OptimumReview/>}/>
+       <Route path="/optimum/shop-mobile" element={<OptimumShopMobile/>}/>
+       <Route path="/optimum/smart-wifi" element={<OptimumSmartWifi/>}/>
+       <Route path="/optimum/tv" element={<OptimumTv/>}/>
+
+       {/* Cox Pages */}
+       <Route path="/cox" element={<CoxReview/>}/> 
+       <Route path="/cox/internet-review" element={<CoxInternetReview/>}/> 
+       <Route path="/cox/tv" element={<CoxTv/>}/> 
+       <Route path="/cox/deals" element={<CoxDeals/>}/> 
+       <Route path="/cox/bundle-review" element={<CoxBundleReview/>}/> 
+       <Route path="/cox/channel-lineup" element={<CoxChannelLineUp/>}/> 
+       <Route path="/cox/availability" element={<CoxAvailability/>}/> 
+       <Route path="/cox/installation-guide" element={<CoxInstallationGuide/>}/> 
+       <Route path="/cox/troubleshooting" element={<CoxTroubleShootingGuide/>}/> 
+       <Route path="/cox/phone-number" element={<CoxCustomerService/>}/> 
+       <Route path="/cox/internet" element={<CoxInternet/>}/> 
+       <Route path="/cox/bundles" element={<CoxBundles/>}/> 
+
+        {/* Verizon Pages */}
+        <Route path="/verizon" element={<VerizonReview/>}/> 
+        <Route path="/verizon/fios-internet" element={<ShopVerizonFiosInternet/>}/> 
+        <Route path="/verizon/5g-home-internet-review" element={<Verizon5gHomeInternetReview/>}/> 
+        <Route path="/verizon/5g-home-internet" element={<ShopVerizon5gHomeInternet/>}/> 
+        <Route path="/verizon/fios-tv" element={<ShopVerizonFiosTv/>}/> 
+        <Route path="/verizon/wireless" element={<ShopVerizonWireless/>}/> 
+        <Route path="/verizon/deals" element={<ShopVerizonDeals/>}/> 
+        <Route path="/verizon/bundles" element={<ShopVerizonBundles/>}/> 
+        <Route path="/verizon/channel-lineup" element={<VerizonChannelLineup/>}/> 
+        <Route path="/verizon/fios-phone" element={<VerizonFiosPhone/>}/> 
+        <Route path="/verizon/phone-number" element={<VerizonCustomerService/>}/> 
+        <Route path="/verizon/fios-internet-review" element={<VerizonFiosInternetReview/>}/> 
+        <Route path="/verizon/fios-tv-review" element={<VerizonFiosTvReview/>}/> 
+        <Route path="/verizon/fios-bundles-review" element={<VerizonFiosBundlesReview/>}/> 
+
+          {/* AT&T Pages */}
+        <Route path="/at&t" element={<AtandtReview/>}/> 
+        <Route path="/at&t/internet" element={<AtandtInternet/>}/> 
+        <Route path="/at&t/deals" element={<AtandtDeals/>}/> 
+        <Route path="/at&t/bundles" element={<AtandtBundles/>}/> 
+        <Route path="/at&t/wireless" element={<AtandtWireless/>}/> 
+        <Route path="/at&t/business" element={<AtandtBusiness/>}/> 
+        <Route path="/at&t/hidden-costs" element={<AtandtHiddenCost/>}/> 
+        <Route path="/at&t/troubleshooting" element={<AtandtTroubleshootingGuide/>}/> 
+        <Route path="/at&t/phone-number" element={<AtandtCustomerService/>}/> 
+        <Route path="/at&t/internet-review" element={<AtandtInternetReveiw/>}/> 
+        <Route path="/at&t/internet-air-review" element={<AtandtInternetAirReview/>}/> 
+        <Route path="/at&t/cheap-internet" element={<CheapAtandtInternet/>}/> 
+        <Route path="/at&t/wireless-review" element={<AtandtWirelessReview/>}/> 
+        <Route path="/at&t/bundles-review" element={<AtandtBundlesReview/>}/> 
+
+           {/* T-Mobile Pages */}
+        <Route path="/tmobile/overview" element={<TMobileOverview/>}/> 
+        <Route path="/tmobile/shop-5g-home-internet" element={<TMobileShop5gHomeInternet/>}/> 
+        <Route path="/tmobile/deals" element={<TMobileDeals/>}/> 
+        <Route path="/tmobile/hotspots" element={<TMobileHotSpots/>}/> 
+        <Route path="/tmobile/availability-map" element={<TMobileAvailabilityMap/>}/> 
+        <Route path="/tmobile/phone-number" element={<TMobileCustomerService/>}/> 
+        <Route path="/tmobile/5g-home-internet-review" element={<TMobile5gHomeInternetReview/>}/> 
+
+           {/* Viasat Pages */}
+        <Route path="/viasat/review" element={<ViasatReview/>}/> 
+
+          {/* hughesnet Pages */}
+        <Route path="/hughesnet/review" element={<HughesnetReview/>}/> 
+        <Route path="/hughesnet/internet" element={<HughesnetInternet/>}/> 
+
+          {/* google fiber internet Pages */}
+        <Route path="/google-fiber-internet/google-fiber" element={<GoogleFiber/>}/> 
+        <Route path="/google-fiber-internet/google-fiber-internet-review" element={<GoogleFiberInternetReview/>}/> 
+        <Route path="/google-fiber-internet/google-fiber-availability-map" element={<GoogleFiberInternetReviewAvailabilityMap/>}/> 
+
+          {/* ziply fiber Pages */}
+        <Route path="/ziply-fiber/review" element={<ZiplyFiberReview/>}/> 
+        <Route path="/ziply-fiber/internet" element={<ZiplyFiberInternet/>}/> 
+        <Route path="/ziply-fiber/phone-number" element={<ZiplyFiberCustomerService/>}/> 
+        <Route path="/ziply-fiber/availability-map" element={<ZiplyFiberAvailabilityMap/>}/> 
+
+           {/* SparkLight Pages */}
+        <Route path="/sparklight/review" element={<SparkLightReview/>}/> 
+        <Route path="/sparklight/internet" element={<SparkLightInternet/>}/> 
+        <Route path="/sparklight/tv" element={<SparkLightTv/>}/> 
+        <Route path="/sparklight/bundles" element={<SparkLightBundles/>}/> 
+        <Route path="/sparklight/channel-lineup" element={<SparkLightChannelLineUp/>}/> 
+        <Route path="/sparklight/phone" element={<SparkLightPhone/>}/> 
+        <Route path="/sparklight/phone-number" element={<SparkLightCustomerService/>}/> 
+
+           {/* centurylink Pages */}
+        <Route path="/centurylink/review" element={<CenturyLinkReview/>}/> 
+        <Route path="/centurylink/internet" element={<CenturyLinkInternet/>}/> 
+        <Route path="/centurylink/internet-review" element={<CenturyLinkInternetReview/>}/> 
+        <Route path="/centurylink/installation-guide" element={<CenturyLinkInstallationGuide/>}/> 
+        <Route path="/centurylink/bundles" element={<CenturyLinkBundles/>}/> 
+        <Route path="/centurylink/bundles-review" element={<CenturyLinkBundlesReview/>}/> 
+        <Route path="/centurylink/phone" element={<CenturyLinkPhone/>}/> 
+        <Route path="/centurylink/phone-number" element={<CenturyLinkCustomerService/>}/> 
+
+           {/* YoutubeTv Pages */}
+        <Route path="/youtubetv/review" element={<YoutubeTvReveiw/>}/> 
+        <Route path="/youtubetv/bundles" element={<YoutubeTvBundles/>}/> 
+        <Route path="/youtubetv/nfl-sunday-ticket" element={<YoutubeTvNflSundayTicket/>}/> 
+        <Route path="/youtubetv/channel-review" element={<YoutubeTvChannelReview/>}/> 
+        <Route path="/youtubetv/what-to-watch" element={<YoutubeTvWhatToWatch/>}/> 
+
+           {/* Amazon Prime Video Pages */}
+        <Route path="/amazon-prime-video/review" element={<AmazonPrimeVideo/>}/> 
+
+           {/* philo Pages */}
+        <Route path="/philo/review" element={<PhiloReview/>}/> 
+        <Route path="/philo/deals" element={<PhiloDeals/>}/> 
+        <Route path="/philo/channel-lineup" element={<PhiloChannelLineUp/>}/> 
+
+           {/* netflix Pages */}
+        <Route path="/netflix/review" element={<NetflixReview/>}/> 
+        <Route path="/netflix/what-to-watch" element={<NetflixWhatToWatch/>}/> 
+
+           {/* Fubo  Pages */}
+        <Route path="/fubo/review" element={<FuboReview/>}/> 
+        <Route path="/fubo/channel-lineup" element={<FuboChannelLineUp/>}/> 
+        <Route path="/fubo/sports" element={<FuboSports/>}/> 
+        <Route path="/fubo/soccer-on" element={<FuboSoccerOn/>}/> 
+
+        {/* Best On demand Streaming Services  page */}
+        <Route path="/best-on-demand-streaming-services" element={<BestOnDemandStreamingServices/>}/> 
+
+        {/* Best On demand Streaming Services  page */}
+        <Route path="/best-live-tv-streaming-services" element={<BestLiveTvStreamingServices/>}/>
+
+        {/* Best On demand Streaming Services  page */}
+        <Route path="/best-streaming-services-for-sports" element={<BestStreamingServicesForSports/>}/>
+
+        {/* Sports  page */}
+        <Route path="/sports" element={<Sports/>}/>
+
+         {/* Sling Tv  Pages */}
+         <Route path="/sling-tv/review" element={<SlingTvReview/>}/> 
+         <Route path="/sling-tv/deals" element={<SlingTvDeals/>}/> 
+         <Route path="/sling-tv/channels" element={<SlingTvChannels/>}/> 
+         <Route path="/sling-tv/local-channels" element={<SlingTvLocalChannels/>}/> 
+         <Route path="/sling-tv/free" element={<SlingTvFree/>}/> 
+         <Route path="/sling-tv/add-on-packages" element={<SlingTvAddOnPackages/>}/> 
+         <Route path="/sling-tv/what-to-watch" element={<SlingTvWhatToWatch/>}/> 
+         <Route path="/sling-tv/phone-number" element={<SlingTvCustomerService/>}/> 
+         
+         {/* Paramount + Pages */}
+         <Route path="/paramount/review" element={<ParamountReview/>}/> 
+         <Route path="/paramount/bundles" element={<ParamountBundles/>}/> 
+         <Route path="/paramount/deals" element={<ParamountDeals/>}/> 
+         <Route path="/paramount/channels" element={<ParamountChannels/>}/> 
+         <Route path="/paramount/originals" element={<ParamountOriginals/>}/> 
+         <Route path="/paramount/what-to-watch" element={<ParamountWhatToWatch/>}/> 
+         <Route path="/paramount/nfl" element={<ParamountNfl/>}/> 
+         <Route path="/paramount/shows" element={<ParamountShows/>}/> 
+         <Route path="/paramount/movies" element={<ParamountMovies/>}/> 
+
+         {/* Peacock  Pages */}
+         <Route path="/peacock/review" element={<PeacockReview/>}/> 
+         <Route path="/peacock/live-tv" element={<PeacockLiveTv/>}/> 
+         <Route path="/peacock/originals" element={<PeacockOriginals/>}/> 
+         <Route path="/peacock/what-to-watch" element={<PeacockWhatToWatch/>}/> 
+         <Route path="/peacock/wwe-on" element={<PeacockWweOn/>}/> 
+         <Route path="/peacock/mbl-on" element={<PeacockMlbOn/>}/> 
+
+         {/* Max Tv  Pages */}
+         <Route path="/max/review" element={<MaxReview/>}/> 
+         <Route path="/max/deals" element={<MaxDeals/>}/> 
+         <Route path="/max/channels" element={<MaxChannels/>}/> 
+         <Route path="/max/sports-on" element={<MaxSportsOn/>}/> 
+         <Route path="/max/what-to-watch" element={<MaxWhatToWatch/>}/> 
+         <Route path="/max/dc-universe" element={<MaxDcUniverse/>}/> 
+
+         {/* Disney +  Pages */}
+         <Route path="/disney/review" element={<DisneyReview/>}/> 
+         <Route path="/disney/bundles-and-deals" element={<DisneyBundlesAndDeals/>}/> 
+         <Route path="/disney/movies" element={<DisneyMovies/>}/> 
+         <Route path="/disney/what-to-watch" element={<DisneyWhatToWatch/>}/> 
+         <Route path="/disney/troubleshooting" element={<DisneyTroubleshootingGuide/>}/> 
+         <Route path="/disney/originals" element={<DisneyOriginals/>}/> 
+         
+         {/* Hulu  Pages */}
+         <Route path="/hulu/review" element={<HuluReview/>}/> 
+         <Route path="/hulu/live-tv-review" element={<HuluLiveTvReview/>}/> 
+         <Route path="/hulu/deals" element={<HuluDeals/>}/> 
+         <Route path="/hulu/bundles" element={<HuluBundles/>}/> 
+         <Route path="/hulu/channel-lineup" element={<HuluChannelLineUp/>}/> 
+         <Route path="/hulu/what-to-watch" element={<HuluWhatToWatch/>}/> 
+         <Route path="/hulu/supported-device" element={<HuluSupportedDevices/>}/> 
+         <Route path="/hulu/troubleshooting" element={<HuluTroubleshootingGuide/>}/> 
+
+    </Routes>
+  );
+};
+
+export default Routers;

@@ -1,0 +1,44 @@
+@import "../../mixins.scss";
+
+.mobile-nav {
+  @include flex($jc: flex-start);
+  background: var(--secondary-color-two);
+  position: absolute;
+  left: 0;
+  width: 50vw;
+  min-width: 258px;
+  border: none;
+  border-radius: 0px 0px 16px 0px;
+  padding: 10px 16px 10px 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+  z-index: 100;
+  height: auto;
+  .icon-box {
+    @include flex;
+    background: var(--primary-color);
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.14));
+    height: 25px;
+    width: 25px;
+    min-width: 25px;
+    margin-right: 10px;
+    border-radius: 100%;
+    border: none;
+    .icon{
+        color: var(--secondary-color-two);
+        font-size: 15px;
+    }
+  }
+
+  .logo{
+    width: 90%;
+    img{
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+  }
+
+  @media(min-width: 910px){
+    display: none;
+  }
+}

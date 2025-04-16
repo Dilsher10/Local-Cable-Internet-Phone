@@ -1,0 +1,28 @@
+@import "../../mixins.scss";
+
+.xfinity-mobile{
+    position: relative;
+
+    .xfinity-deals-and-promotions{
+        background-color: var(--secondary-color-three);
+
+        .bottom-line{
+            @include p3;
+            color: var(--secondary-color-one);
+            text-align: center;
+            margin-top: 7px;
+        }
+    }
+
+    .xfinity-mobile-pricing{
+        .package-table{
+            tbody{
+                background: var(--secondary-color-three);
+            }
+        }
+    }
+
+    .xfinity-mobile-faq{
+        background: var(--secondary-color-three);
+    }
+}

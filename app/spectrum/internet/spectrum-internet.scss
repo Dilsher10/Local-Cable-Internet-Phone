@@ -1,0 +1,152 @@
+@import "../../mixins.scss";
+
+.spectrum-internet {
+  position: relative;
+  .best-tv-service-offers {
+    background-color: var(--secondary-color-three);
+  }
+  .spectrum-prices-and-packages {
+    background-color: var(--secondary-color-two);
+    .package-table table tbody {
+      background-color: var(--secondary-color-three);
+    }
+    .below-table {
+      @include p2($fw: 300);
+      text-align: center;
+      margin-top: 10px;
+      font-style: italic;
+    }
+  }
+  .spectrum-tv-and-internet-packages {
+    background-color: var(--secondary-color-three);
+    .below-table {
+      @include p2($fw: 300);
+      text-align: center;
+      margin-top: 10px;
+      font-style: italic;
+    }
+  }
+  .spectrum-internet-speed {
+    background-color: var(--secondary-color-two);
+    .column {
+      background-color: var(--secondary-color-three);
+    }
+  }
+  .spectrum-deals-features {
+    background-color: var(--secondary-color-three);
+    .channels {
+      background-color: var(--secondary-color-two);
+      box-shadow: 0px 4px 4px 0px #00000024;
+      .after-heading {
+        margin-top: 10px;
+        a {
+          @include p2($fw: 300);
+          color: #0070ff;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+
+      ul {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        list-style: none;
+        li {
+          @include p2($fw: 400);
+          span {
+            a {
+              @include p2($fw: 400);
+              color: #0070ff;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      .btn {
+        overflow: hidden;
+        padding: 22px 0 22px 0;
+        @include p2($fw: 400);
+        color: var(--secondary-color-one);
+        text-transform: capitalize;
+
+        &:nth-of-type(1) {
+          color: #a5a5a5;
+          text-align: right;
+        }
+        a {
+          background: var(--primary-color);
+          padding: 11px 24px;
+          border: none;
+          border-radius: 12px 0 12px 0;
+          color: var(--secondary-color-two);
+          @include btActive;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+          transition: var(--basic);
+          &:hover {
+            border-radius: 0 12px 0 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .divider-two {
+    background: var(--primary-color);
+    padding: 30px 5%;
+    h4 {
+      flex: 1;
+      text-align: center;
+      @include h4;
+      color: var(--secondary-color-two);
+      margin-bottom: 15px;
+    }
+    p {
+      flex: 1;
+      text-align: center;
+      @include p2;
+      color: var(--secondary-color-two);
+      span {
+        a {
+          @include p2($fw: 500);
+          text-decoration: underline;
+          &:hover {
+            color: var(--secondary-color-one);
+          }
+        }
+      }
+    }
+  }
+  .spectrum-learn-more-about{
+    background-color: var(--secondary-color-two);
+  }
+  .spectrum-internet-faq {
+    background: var(--secondary-color-three);
+    .faq-wrapper {
+      margin-top: 20px;
+      .accordion {
+        .item {
+          background: var(--secondary-color-two);
+        }
+      }
+    }
+  }
+  .tv-endnote{
+    padding: 80px 5%;
+    background: var(--secondary-color-two);
+    .endnote-container{
+       background-color: var(--secondary-color-three);
+       .bold{
+        @include p2($fw:600);
+       }
+       .below-table {
+        @include p2($fw: 300);
+        margin-top: 10px;
+        font-style: italic;
+      }
+    }
+  }
+}

@@ -1,0 +1,753 @@
+@import "../mixins.scss";
+
+.best-on-demand-streaming-services { 
+  position: relative;
+  .hidden-costs-hero {
+    position: relative;
+    width: 100%;
+    height: 329px;
+    background: url('/hero-bg.svg') center,
+      linear-gradient(
+        to right,
+        var(--primary-color),
+        var(--secondary-color-one)
+      );
+    padding: 80px 5% 0 5%;
+    text-align: center;
+    h1 {
+      @include h2;
+      color: var(--secondary-color-two);
+      text-transform: capitalize;
+      margin-top: 20px;
+    }
+    & > p {
+      @include p1;
+      color: var(--secondary-color-two);
+      text-transform: capitalize;
+      line-height: 26px;
+      margin: 15px auto;
+    }
+  }
+  .best-internet-tv-offer {
+    background-color: var(--secondary-color-three);
+    padding: 80px 5% 20px 5%;
+    .cards {
+      margin-top: -200px;
+    }
+  }
+  .endnote-start {
+    background-color: var(--secondary-color-three);
+  }
+  .important-links {
+    .all-links {
+      @include flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      a {
+        padding: 12px;
+        margin: 12px;
+        @include p2($fw: 400);
+        text-decoration: underline;
+        color: var(--primary-color);
+        border: none;
+        border-radius: 24px;
+        background: #e6f1ff;
+        transition: var(--basic);
+        text-align: center;
+        &:hover {
+          color: var(--secondary-color-two);
+          background: var(--primary-color);
+        }
+      }
+    }
+  }
+  .blank {
+    padding: 80px 5%;
+    background-color: var(--secondary-color-three);
+    .endnote-container {
+      background-color: var(--secondary-color-two);
+      .bold-blue {
+        color: #0070ff;
+        @include h6;
+      }
+      .channel-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: auto;
+        padding: 20px;
+        margin: 0px;
+        li {
+          @include p2($fw: 300);
+          margin: 0px;
+          span.link {
+            a {
+              @include p2($fw: 300);
+              color: var(--primary-color);
+              margin: 0px;
+            }
+          }
+        }
+      }
+      .btn {
+        overflow: hidden;
+        padding: 22px 0 22px 0;
+        @include p2($fw: 400);
+        color: var(--secondary-color-one);
+        text-transform: capitalize;
+        text-align: end;
+
+        &:nth-of-type(1) {
+          color: #a5a5a5;
+          text-align: right;
+        }
+        a {
+          background: var(--primary-color);
+          padding: 11px 24px;
+          border: none;
+          border-radius: 12px 0 12px 0;
+          color: var(--secondary-color-two);
+          @include btActive;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+          transition: var(--basic);
+          &:hover {
+            border-radius: 0 12px 0 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+      hr {
+        border-color: var(--primary-color);
+        margin-top: 20px;
+      }
+    }
+  }
+  .cost {
+    table {
+      tbody {
+        background: var(--secondary-color-three);
+      }
+    }
+    p.below-table {
+      margin-top: 10px;
+      @include p2($fw: 300);
+      text-align: center;
+      a {
+        @include p2($fw: 300);
+        color: #0070ff;
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+    .channels {
+      background-color: var(--secondary-color-three);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+      .after-heading {
+        margin-top: 10px;
+        a {
+          @include p2($fw: 300);
+          color: #0070ff;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+      table {
+        tbody {
+          background-color: var(--secondary-color-three);
+        }
+      }
+      .btn {
+        overflow: hidden;
+        padding: 22px 0 22px 0;
+        @include p2($fw: 400);
+        color: var(--secondary-color-one);
+        text-transform: capitalize;
+        text-align: end;
+
+        &:nth-of-type(1) {
+          color: #a5a5a5;
+          text-align: right;
+        }
+        a {
+          background: var(--primary-color);
+          padding: 11px 24px;
+          border: none;
+          border-radius: 12px 0 12px 0;
+          color: var(--secondary-color-two);
+          @include btActive;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+          transition: var(--basic);
+          &:hover {
+            border-radius: 0 12px 0 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+      .channel-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: disc;
+        padding: 20px;
+        li {
+          @include p2($fw: 300);
+        }
+      }
+      .left {
+        text-align: left;
+      }
+      p {
+        span {
+          a {
+            @include p2($fw: 300);
+            color: #0070ff;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      hr {
+        border-color: var(--primary-color);
+        margin-top: 20px;
+      }
+      img.mark {
+        width: 44px;
+        margin: 0px 0px 25px;
+      }
+      .container {
+        display: flex;
+        flex-wrap: nowrap;
+        .column {
+          flex: 1;
+          margin: 10px;
+          box-sizing: border-box;
+          h4 {
+            @include h5;
+            color: var(--secondary-color-one);
+          }
+          p {
+            @include p2($fw: 300);
+          }
+          ul {
+            li {
+              @include p2($fw: 300);
+            }
+          }
+        }
+      }
+    }
+  }
+  .detail {
+    background-color: var(--secondary-color-three);
+    .channels {
+      background-color: var(--secondary-color-two);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+      .after-heading {
+        margin-top: 10px;
+        a {
+          @include p2($fw: 300);
+          color: #0070ff;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+      .custom-table {
+        box-shadow: var(--secndary-shadow);
+        table {
+          table-layout: fixed;
+          thead {
+            tr {
+              th {
+                text-align: center !important;
+                .icon {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+          tbody {
+            background: var(--secondary-color-three);
+            tr {
+              td:nth-of-type(1) {
+                color: #000;
+              }
+              td {
+                text-align: center !important;
+              }
+            }
+          }
+        }
+      }
+      table {
+        tbody {
+          background-color: var(--secondary-color-three);
+        }
+      }
+      .btn {
+        overflow: hidden;
+        padding: 22px 0 22px 0;
+        @include p2($fw: 400);
+        color: var(--secondary-color-one);
+        text-transform: capitalize;
+        text-align: end;
+
+        &:nth-of-type(1) {
+          color: #a5a5a5;
+          text-align: right;
+        }
+        a {
+          background: var(--primary-color);
+          padding: 11px 24px;
+          border: none;
+          border-radius: 12px 0 12px 0;
+          color: var(--secondary-color-two);
+          @include btActive;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+          transition: var(--basic);
+          &:hover {
+            border-radius: 0 12px 0 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+      .channel-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: disc;
+        padding: 20px;
+        li {
+          @include p2($fw: 300);
+        }
+      }
+      ul {
+        li {
+          @include p2($fw: 300);
+        }
+      }
+      .left {
+        text-align: left;
+      }
+      p {
+        span {
+          a {
+            @include p2($fw: 300);
+            color: #0070ff;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      hr {
+        border-color: var(--primary-color);
+        margin-top: 20px;
+      }
+      img.mark {
+        width: 44px;
+        margin: 0px 0px 25px;
+      }
+      .container {
+        display: flex;
+        flex-wrap: nowrap;
+        .column {
+          flex: 1;
+          margin: 10px;
+          box-sizing: border-box;
+          h4 {
+            @include h5;
+            color: var(--secondary-color-one);
+          }
+          p {
+            @include p2($fw: 300);
+          }
+          ul {
+            li {
+              @include p2($fw: 300);
+            }
+          }
+        }
+      }
+      .inner-hero {
+        width: 100%;
+        background: url('/hero-bg.svg') center,
+          linear-gradient(
+            to right,
+            var(--primary-color),
+            var(--secondary-color-one)
+          );
+        background-size: cover;
+
+        .head {
+          margin-top: 20px;
+          .sect-heading,
+          .sect-desc {
+            color: #fff;
+          }
+        }
+        .sect-desc {
+          color: #fff;
+          @include p2($fw: 400);
+          margin-top: 20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .providers {
+    .channels {
+      background-color: var(--secondary-color-three);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+      .after-heading {
+        margin-top: 10px;
+        a {
+          @include p2($fw: 300);
+          color: #0070ff;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+      .grid-container {
+        background-color: var(--secondary-color-two);
+      }
+      .custom-table {
+        box-shadow: var(--secndary-shadow);
+        table {
+          table-layout: fixed;
+          thead {
+            tr {
+              th {
+                text-align: center !important;
+                .icon {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+          tbody {
+            background: var(--secondary-color-two);
+            tr {
+              td:nth-of-type(1) {
+                color: #000;
+              }
+              td {
+                text-align: center !important;
+              }
+            }
+          }
+        }
+      }
+      table {
+        tbody {
+          background-color: var(--secondary-color-two);
+        }
+      }
+      .btn {
+        overflow: hidden;
+        padding: 22px 0 22px 0;
+        @include p2($fw: 400);
+        color: var(--secondary-color-one);
+        text-transform: capitalize;
+        text-align: end;
+
+        &:nth-of-type(1) {
+          color: #a5a5a5;
+          text-align: right;
+        }
+        a {
+          background: var(--primary-color);
+          padding: 11px 24px;
+          border: none;
+          border-radius: 12px 0 12px 0;
+          color: var(--secondary-color-two);
+          @include btActive;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+          transition: var(--basic);
+          &:hover {
+            border-radius: 0 12px 0 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+      .channel-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: disc;
+        padding: 20px;
+        li {
+          @include p2($fw: 300);
+        }
+      }
+      ul {
+        li {
+          @include p2($fw: 300);
+        }
+      }
+      .left {
+        text-align: left;
+      }
+      p {
+        span {
+          a {
+            @include p2($fw: 300);
+            color: #0070ff;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      hr {
+        border-color: var(--primary-color);
+        margin-top: 20px;
+      }
+      img.mark {
+        width: 44px;
+        margin: 0px 0px 25px;
+      }
+      .container {
+        display: flex;
+        flex-wrap: nowrap;
+        .column {
+          flex: 1;
+          margin: 10px;
+          box-sizing: border-box;
+          h4 {
+            @include h5;
+            color: var(--secondary-color-one);
+          }
+          p {
+            @include p2($fw: 300);
+          }
+          ul {
+            li {
+              @include p2($fw: 300);
+            }
+          }
+        }
+      }
+      .inner-hero {
+        width: 100%;
+        background: url('/hero-bg.svg') center,
+          linear-gradient(
+            to right,
+            var(--primary-color),
+            var(--secondary-color-one)
+          );
+        background-size: cover;
+
+        .head {
+          margin-top: 20px;
+          .sect-heading,
+          .sect-desc {
+            color: #fff;
+          }
+        }
+        .sect-desc {
+          color: #fff;
+          @include p2($fw: 400);
+          margin-top: 20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .service {
+    background-color: var(--secondary-color-three);
+
+    .channels {
+      background-color: var(--secondary-color-two);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+      .after-heading {
+        margin-top: 10px;
+        a {
+          @include p2($fw: 300);
+          color: #0070ff;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+      table {
+        tbody {
+          background-color: var(--secondary-color-three);
+        }
+      }
+      .btn {
+        overflow: hidden;
+        padding: 22px 0 22px 0;
+        @include p2($fw: 400);
+        color: var(--secondary-color-one);
+        text-transform: capitalize;
+        text-align: end;
+
+        &:nth-of-type(1) {
+          color: #a5a5a5;
+          text-align: right;
+        }
+        a {
+          background: var(--primary-color);
+          padding: 11px 24px;
+          border: none;
+          border-radius: 12px 0 12px 0;
+          color: var(--secondary-color-two);
+          @include btActive;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+          transition: var(--basic);
+          &:hover {
+            border-radius: 0 12px 0 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+      .channel-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: disc;
+        padding: 20px;
+        li {
+          @include p2($fw: 300);
+        }
+      }
+      ul {
+        li {
+          @include p2($fw: 300);
+        }
+      }
+      .left {
+        text-align: left;
+      }
+      p {
+        span {
+          a {
+            @include p2($fw: 300);
+            color: #0070ff;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      hr {
+        border-color: var(--primary-color);
+        margin-top: 20px;
+      }
+      img.mark {
+        width: 44px;
+        margin: 0px 0px 25px;
+      }
+      .container {
+        display: flex;
+        flex-wrap: nowrap;
+        .column {
+          flex: 1;
+          margin: 10px;
+          box-sizing: border-box;
+          h4 {
+            @include h5;
+            color: var(--secondary-color-one);
+          }
+          p {
+            @include p2($fw: 300);
+          }
+          ul {
+            li {
+              @include p2($fw: 300);
+            }
+          }
+        }
+      }
+    }
+  }
+  .final-take {
+    .all-links {
+      @include flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      a {
+        padding: 12px;
+        margin: 12px;
+        @include p2($fw: 400);
+        text-decoration: underline;
+        color: var(--primary-color);
+        border: none;
+        border-radius: 24px;
+        background: #e6f1ff;
+        transition: var(--basic);
+        text-align: center;
+        &:hover {
+          color: var(--secondary-color-two);
+          background: var(--primary-color);
+        }
+      }
+    }
+  }
+  .faq {
+    background: var(--secondary-color-three);
+
+    .accordion {
+      .item {
+        background: var(--secondary-color-two);
+      }
+    }
+  }
+  .page-endnote {
+    padding: 80px 5%;
+    .endnote-container {
+      background: var(--secondary-color-three);
+
+      ul {
+        list-style: none;
+        margin-top: 15px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 15px;
+        li {
+          span {
+            a {
+              @include p2($fw: 400);
+              color: #0070ff;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      .endnote-review {
+        @include p1($fw: 300);
+      }
+    }
+  }
+}
+// tablet
+@media (min-width: 441px) and (max-width: 820px){
+  .best-on-demand-streaming-services { 
+    .hidden-costs-hero {
+      padding-top: 100px !important;
+    }
+    .blank {
+      .endnote-container {
+        .channel-list {
+          grid-template-columns: repeat(1, 1fr);
+        }        
+      }
+    }
+  }
+}
+
+// mobile
+@media (max-width: 440px){       
+  .best-on-demand-streaming-services { 
+    .hidden-costs-hero {
+      padding-top: 90px !important;
+    }
+  }
+}

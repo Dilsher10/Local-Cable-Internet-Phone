@@ -1,0 +1,77 @@
+@import "../../mixins.scss";
+
+.newsletter {
+  background: url(../../assets/images/blue-dotted-bg.svg) center,
+    var(--secondary-color-three);
+
+  .newsletter-box {
+    background: var(--primary-color);
+    width: 100%;
+    border: none;
+    border-radius: 24px;
+    padding: 80px 10px;
+    margin: auto;
+    .head {
+      .sect-heading,
+      .sect-desc {
+        color: var(--secondary-color-two);
+      }
+    }
+
+    .form{
+        width: 60%;
+        margin: 25px auto 0 auto;
+    }
+  }
+}
+
+// tablet
+@media (min-width: 441px) and (max-width: 820px){
+  .newsletter {
+    .newsletter-box {
+      border-radius: 12px;
+      padding: 40px 10px;
+      margin: auto;
+      .head {
+        .sect-heading{
+          @include h5();
+        }
+        .sect-desc {
+          @include p3();
+          max-width: 100%;
+        }
+      }
+  
+      .form{
+          width: 95%;
+          margin: 25px auto 0 auto;
+      }
+    }
+  }
+}
+
+// mobile
+@media (max-width: 440px){
+  .newsletter {
+    .newsletter-box {
+      border-radius: 12px;
+      padding: 40px 10px;
+      margin: auto;
+      .head {
+        .sect-heading{
+          @include h5();
+        }
+        .sect-desc {
+          @include p3();
+          max-width: 100%;
+        }
+      }
+  
+      .form{
+          width: 95%;
+          margin: 25px auto 0 auto;
+      }
+    }
+  }
+  
+}

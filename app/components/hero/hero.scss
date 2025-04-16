@@ -1,0 +1,105 @@
+@import "../../mixins.scss";
+
+.hero {
+  height: 495px;         
+  width: 100%;
+  // background: url('data:image/svg+xml,<svg width="1440" height="495" viewBox="0 0 1440 495" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect width="1440" height="495" fill="url(%23pattern0)" fill-opacity="0.15"/><defs><pattern id="pattern0" patternContentUnits="objectBoundingBox" width="0.00555556" height="0.0161616"><use xlink:href="%23image0_882_16057" transform="scale(0.000694444 0.0020202)"/></pattern><image id="image0_882_16057" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAoSURBVHgBvc4xCgAACAJA6/9/toKmIBoCbxF0EfiybWCqdOiwzf78EFk8C/o+svPFAAAAAElFTkSuQmCC"/></defs></svg>') center,
+    // linear-gradient(to right, var(--primary-color), var(--secondary-color-one));
+  background: url('/hero-bg.svg') center,
+  linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color-one)
+  );
+  background-size: cover;
+  @include flex($jc: space-between);
+  .hero-content {
+    width: 66%;
+    height: 100%;
+    @include flex($jc: center, $ai: flex-start);
+    flex-direction: column;
+    padding: 0 10px 0 5%;
+    h1{
+        @include h1();
+        color: var(--secondary-color-two);
+    }
+    P{
+        @include p1();
+        color: var(--secondary-color-two);
+        margin: 25px 0;
+    }
+    .form{
+        width: 90%;
+    }
+  }
+  .hero-sideimg {
+    height: 100%;
+    @include flex($jc: center, $ai: end)
+  }
+}
+
+// tablet
+@media (min-width: 441px) and (max-width: 820px){
+  .hero{
+    flex-direction: column;
+    height: 540px;
+    .hero-content{
+      width:95%;
+      height: auto;
+      padding-top: 100px;
+      padding: 100px 10px 25px 10px;
+      text-align: center;
+      align-items: center;
+      h1{
+        @include h4();
+      }
+      P{
+          @include p2();
+      }
+      .form{
+          width: 95%;
+      }
+    }
+    .hero-sideimg {
+      overflow: hidden;
+      margin: auto;
+      width: 100%;
+      img{
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+}
+
+// mobile
+@media (max-width: 440px){
+  .hero{
+    flex-direction: column;
+    height: 540px;
+    .hero-content{
+      width:95%;
+      height: auto;
+      padding-top: 100px;
+      padding: 100px 10px 10px 10px;
+      text-align: center;
+      align-items: center;
+      h1{
+        @include h4();
+      }
+      P{
+          @include p2();
+      }
+      .form{
+          width: 95%;
+      }
+    }
+    .hero-sideimg {
+      overflow: hidden;
+      img{
+        width: 95%;
+      }
+    }
+  }
+  
+}

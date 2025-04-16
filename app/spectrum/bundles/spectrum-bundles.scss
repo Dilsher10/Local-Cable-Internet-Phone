@@ -1,0 +1,305 @@
+@import "../../mixins.scss";
+
+.spectrum-bundles {
+  position: relative;
+  .inner-hero {
+    width: 100%;
+    background: url('/hero-bg.svg') center,
+      linear-gradient(
+        to right,
+        var(--primary-color),
+        var(--secondary-color-one)
+      );
+    background-size: cover;
+
+    .head {
+      margin-top: 20px;
+      .sect-heading,
+      .sect-desc {
+        color: #fff;
+      }
+    }
+  }
+  .best-mobile-bundles-offers {
+    background-color: var(--secondary-color-three);
+  }
+  .get-spectrum-phone-bundles {
+    background-color: var(--secondary-color-three);
+  }
+  .spectrum-voice {
+    background-color: var(--secondary-color-two);
+    .below-table {
+      @include p2($fw: 300);
+      text-align: center;
+      margin-top: 15px;
+    }
+    table {
+      tbody {
+        background-color: var(--secondary-color-three);
+      }
+    }
+    .channels {
+      background-color: var(--secondary-color-three);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+      .after-heading {
+        margin-top: 10px;
+        a {
+          @include p2($fw: 300);
+          color: #0070ff;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+      p {
+        span {
+          a {
+            @include p2($fw: 300);
+            color: var(--primary-color);
+            &:hover {
+              border-radius: 0 12px 0 12px;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      ul {
+        li {
+          @include p2($fw: 300);
+          span {
+            @include p2($fw: 300);
+            color: #0070ff;
+          }
+        }
+      }
+      .below-table {
+        text-align: center;
+      }
+      table {
+        tbody {
+          background-color: var(--secondary-color-three);
+        }
+      }
+      .btn {
+        overflow: hidden;
+        padding: 22px 0 22px 0;
+        @include p2($fw: 400);
+        color: var(--secondary-color-one);
+        text-transform: capitalize;
+
+        &:nth-of-type(1) {
+          color: #a5a5a5;
+          text-align: right;
+        }
+        a {
+          background: var(--primary-color);
+          padding: 11px 24px;
+          border: none;
+          border-radius: 12px 0 12px 0;
+          color: var(--secondary-color-two);
+          @include btActive;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+          transition: var(--basic);
+          &:hover {
+            border-radius: 0 12px 0 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+      .channel-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: disc;
+        padding: 20px;
+        li {
+          @include p2($fw: 300);
+        }
+      }
+      .left {
+        text-align: left;
+      }
+    }
+  }
+  .compare-spectrum-internet-plans {
+    background-color: var(--secondary-color-three);
+  }
+  .spectrum-customization-lower-cost {
+    background-color: var(--secondary-color-two);
+    .below-table {
+      @include p2($fw: 300);
+      text-align: center;
+      margin-top: 15px;
+    }
+    table {
+      tbody {
+        background-color: var(--secondary-color-three);
+      }
+    }
+
+    .channels {
+      background-color: var(--secondary-color-three);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+      .after-heading {
+        margin-top: 10px;
+        a {
+          @include p2($fw: 300);
+          color: #0070ff;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+      p {
+        span {
+          a {
+            @include p2($fw: 300);
+            color: var(--primary-color);
+            &:hover {
+              border-radius: 0 12px 0 12px;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      ul {
+        li {
+          @include p2($fw: 300);
+          span {
+            @include p2($fw: 300);
+            color: #0070ff;
+          }
+        }
+      }
+      .below-table {
+        text-align: center;
+      }
+      table {
+        tbody {
+          background-color: var(--secondary-color-three);
+        }
+      }
+      .btn {
+        overflow: hidden;
+        padding: 22px 0 22px 0;
+        @include p2($fw: 400);
+        color: var(--secondary-color-one);
+        text-transform: capitalize;
+
+        &:nth-of-type(1) {
+          color: #a5a5a5;
+          text-align: right;
+        }
+        a {
+          background: var(--primary-color);
+          padding: 11px 24px;
+          border: none;
+          border-radius: 12px 0 12px 0;
+          color: var(--secondary-color-two);
+          @include btActive;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+          transition: var(--basic);
+          &:hover {
+            border-radius: 0 12px 0 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+      .channel-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: disc;
+        padding: 20px;
+        li {
+          @include p2($fw: 300);
+        }
+      }
+      .left {
+        text-align: left;
+      }
+      .custom-table {
+        box-shadow: var(--secndary-shadow);
+        table {
+          thead {
+            tr {
+              th {
+                text-align: left;
+                .icon {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+          tbody {
+            background: var(--secondary-color-two);
+            tr {
+              td:nth-of-type(1) {
+                text-align: center;
+                padding: 0px 5px;
+              }
+              td {
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .spectrum-budles-features{
+    background-color: var(--secondary-color-three);
+  }
+  .spectrum-packages{
+    background-color: var(--secondary-color-two);
+    .below-table {
+        @include p2($fw: 300);
+        text-align: center;
+        margin-top: 15px;
+      }
+  }
+  .spectrum-bundles-faq {
+    background: var(--secondary-color-three);
+    .accordion {
+      .item {
+        background: var(--secondary-color-two);
+      }
+    }
+  }
+  .spectrum-bundles-endnote {
+    padding: 80px 5%;
+    background: var(--secondary-color-two);
+    .endnote-container {
+      background: var(--secondary-color-three);
+      .bold {
+        @include p2($fw: 600);
+      }
+      .below-table {
+        @include p2($fw: 300);
+        margin-top: 10px;
+        font-style: italic;
+      }
+      ul {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        list-style: none;
+        margin-left: 0px;
+        margin-right: 0px;
+        li {
+          span {
+            a {
+              @include p2($fw: 400);
+              color: #0070ff;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      .endnote-review {
+        @include p1($fw: 300);
+      }
+    }
+  }
+}

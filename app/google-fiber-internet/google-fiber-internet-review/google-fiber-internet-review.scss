@@ -1,0 +1,271 @@
+@import "../../mixins.scss";
+
+.google-fiber-internet-review {
+  position: relative;
+  .inner-hero {
+    width: 100%;
+    background: url('/hero-bg.svg') center,
+      linear-gradient(
+        to right,
+        var(--primary-color),
+        var(--secondary-color-one)
+      );
+    background-size: cover;
+
+    .head {
+      margin-top: 20px;
+      .sect-heading,
+      .sect-desc {
+        color: #fff;
+      }
+    }
+  }
+  .is-good {
+    background: var(--secondary-color-three);
+    padding: 80px 5%;
+    .bold-blue {
+      color: #0070ff;
+      @include h6;
+    }
+    .custom-table {
+      box-shadow: var(--secndary-shadow);
+      table {
+        thead {
+          tr {
+            th {
+              text-align: center;
+              .icon {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+        tbody {
+          background: var(--secondary-color-three);
+          tr {
+            td:nth-of-type(1) {
+              color: #000;
+            }
+            td {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    ul {
+      list-style: none;
+      margin: 0px;
+      li {
+        b {
+          @include p2($fw: bold);
+        }
+      }
+    }
+  }
+  .important-links {
+    .all-links {
+      @include flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      a {
+        padding: 12px;
+        margin: 12px;
+        @include p2($fw: 400);
+        text-decoration: underline;
+        color: var(--primary-color);
+        border: none;
+        border-radius: 24px;
+        background: #e6f1ff;
+        transition: var(--basic);
+        text-align: center;
+        &:hover {
+          color: var(--secondary-color-two);
+          background: var(--primary-color);
+        }
+      }
+    }
+  }
+  .home-internet-plans {
+    background: var(--secondary-color-two);
+    table {
+      tbody {
+        background-color: var(--secondary-color-three);
+      }
+    }
+    p.below-table {
+      margin-top: 10px;
+      @include p2($fw: 300);
+      text-align: center;
+      a {
+        @include p2($fw: 300);
+        color: #0070ff;
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .internet-competition {
+    background: var(--secondary-color-three);
+    table {
+      tbody {
+        background-color: var(--secondary-color-two);
+      }
+    }
+    p.below-table {
+      margin-top: 10px;
+      @include p2($fw: 300);
+      text-align: center;
+      a {
+        @include p2($fw: 300);
+        color: #0070ff;
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .features {
+    background: var(--secondary-color-two);
+    .channels {
+      background-color: var(--secondary-color-three);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+      .after-heading {
+        margin-top: 10px;
+        a {
+          @include p2($fw: 300);
+          color: #0070ff;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+      table {
+        tbody {
+          background-color: var(--secondary-color-two);
+        }
+      }
+      .btn {
+        overflow: hidden;
+        padding: 22px 0 22px 0;
+        @include p2($fw: 400);
+        color: var(--secondary-color-one);
+        text-transform: capitalize;
+        text-align: end;
+
+        &:nth-of-type(1) {
+          color: #a5a5a5;
+          text-align: right;
+        }
+        a {
+          background: var(--primary-color);
+          padding: 11px 24px;
+          border: none;
+          border-radius: 12px 0 12px 0;
+          color: var(--secondary-color-two);
+          @include btActive;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+          transition: var(--basic);
+          &:hover {
+            border-radius: 0 12px 0 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+      .channel-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: disc;
+        padding: 20px;
+        li {
+          @include p2($fw: 300);
+        }
+      }
+      .left {
+        text-align: left;
+      }
+      p {
+        span {
+          a {
+            @include p2($fw: 300);
+            color: #0070ff;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      hr {
+        border-color: var(--primary-color);
+        margin-top: 20px;
+      }
+      img.mark {
+        width: 44px;
+        margin: 0px 0px 25px;
+      }
+    }
+  }
+  .final-take {
+    background: var(--secondary-color-three);
+    .all-links {
+      @include flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      a {
+        padding: 12px;
+        margin: 12px;
+        @include p2($fw: 400);
+        text-decoration: underline;
+        color: var(--primary-color);
+        border: none;
+        border-radius: 24px;
+        background: #e6f1ff;
+        transition: var(--basic);
+        text-align: center;
+        &:hover {
+          color: var(--secondary-color-two);
+          background: var(--primary-color);
+        }
+      }
+    }
+  }
+  .faq {
+    .accordion {
+      .item {
+        background: var(--secondary-color-three);
+      }
+    }
+  }
+  .page-endnote {
+    padding: 80px 5%;
+    background: var(--secondary-color-three);
+    .endnote-container {
+      background: var(--secondary-color-two);
+      ul {
+        list-style: none;
+        margin-top: 15px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 15px;
+        li {
+          span {
+            a {
+              @include p2($fw: 400);
+              color: #0070ff;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      .endnote-review {
+        @include p1($fw: 300);
+      }
+    }
+  }
+}

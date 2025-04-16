@@ -1,0 +1,92 @@
+.blogDetails {
+    padding: 80px 10%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 40px;
+}
+
+.blogDetails .blog-title {
+    font-weight: 900;
+    font-size: 2.8rem;
+    font-family: "Lato", sans-serif;
+    color: #181818;
+    text-transform: capitalize;
+    padding: 40px 0;
+    margin-top: 3rem;
+    line-height: 5rem;
+}
+
+.blogDetails .blog-content p {
+    font-weight: 300;
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+    color: #181818;
+    margin: 15px auto;
+    line-height: 30px;
+}
+
+.blogDetails .heading {
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    color: #181818;
+    margin: 15px auto;
+    line-height: 21px;
+}
+
+.blogDetails .text {
+    font-weight: 300;
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+    color: #181818;
+    margin: 15px auto;
+    line-height: 21px;
+    padding-bottom: 7rem;
+}
+
+.blogDetails .blogInfo {
+    border: 1px solid gainsboro;
+    padding: 10px 40px;
+}
+
+.blogDetails .related-posts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.blogDetails .related-posts h2 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    font-family: "Lato", sans-serif;
+    color: #181818;
+    margin: 15px auto;
+    line-height: 22px;
+}
+
+.blogDetails .related-posts h2:hover {
+    text-decoration: underline;
+}
+
+.blogDetails .related-posts p {
+    font-weight: 300;
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+    color: #181818;
+    margin: 15px auto;
+    line-height: 22px;
+}
+
+.blogDetails .related-posts .btn {
+    font-weight: 500;
+    font-size: 1.4rem;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    margin: 15px auto;
+    line-height: 25px;
+    background-color: #0070ff;
+    padding: 10px 20px;
+}
+
+
+

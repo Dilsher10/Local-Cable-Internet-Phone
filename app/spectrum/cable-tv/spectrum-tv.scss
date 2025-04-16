@@ -1,0 +1,71 @@
+@import "../../mixins.scss";
+.spectrum-tv {
+  position: relative;
+  .tv-endnote {
+    .endnote-container {
+      background: var(--secondary-color-three);
+    }
+  }
+  .spectrum-tv-packages {
+    background: var(--secondary-color-three);
+  }
+  .spectrum-entertainment-view {
+    background-color: var(--secondary-color-two);
+    .custom-table {
+      table {
+        tbody {
+          background: var(--secondary-color-three);
+        }
+      }
+    }
+  }
+  .divider-two {
+    background: var(--primary-color);
+    padding: 30px 5%;
+    h4 {
+      flex: 1;
+      text-align: center;
+      @include h4;
+      color: var(--secondary-color-two);
+      margin-bottom: 15px;
+    }
+    p {
+      flex: 1;
+      text-align: center;
+      @include p2;
+      color: var(--secondary-color-two);
+      span {
+        a {
+          @include p2($fw: 500);
+          text-decoration: underline;
+          &:hover {
+            color: var(--secondary-color-one);
+          }
+        }
+      }
+    }
+  }
+  .spectrum-watch-tv-first{
+   background-color: var(--secondary-color-two);
+  }
+  .spectrum-watch-tv-second{
+   background-color: var(--secondary-color-three);
+  }
+  .spectrum-tv-faq {
+   .faq-wrapper {
+     margin-top: 20px;
+     .accordion {
+       .item {
+         background: var(--secondary-color-three);
+       }
+     }
+   }
+ }
+ .tv-endnote{
+   padding: 80px 5%;
+   background: var(--secondary-color-three);
+   .endnote-container{
+      background-color: var(--secondary-color-two);
+   }
+ }
+}

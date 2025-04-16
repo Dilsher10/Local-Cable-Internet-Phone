@@ -1,0 +1,127 @@
+@import "../../mixins.scss";
+
+.searchbar {
+  @include flex($jc: space-between);
+  width: 100%;
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.14);
+  background-color: var(--secondary-color-two);
+  .input-box {
+    @include flex($jc: flex-start);
+    height: 35px;
+    .house-icon {
+      font-size: 22px;
+      color: #888888;
+      margin-right: 7px;
+    }
+    input {
+      border: none;
+      background: transparent;
+      @include p1;
+      color: #888888;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  select{
+    border: none;
+      background: transparent;
+      @include p1;
+      color: #888888;
+      &:focus {
+        outline: none;
+      }
+  }
+
+  button {
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    border: none;
+    padding: 6px;
+    @include flex;
+    cursor: pointer;
+    transition: var(--basic);
+    .upright-arrow-icon {
+      color: var(--secondary-color-two);
+      font-size: 30px;
+      transition: var(--basic);
+    }
+
+    &:hover{
+        // background-color: var(--secondary-color-one);
+        .upright-arrow-icon{
+            transform: scale(0.9);
+        }
+    }
+  }
+}
+
+// tablet
+@media (min-width: 441px) and (max-width: 820px){ 
+  .searchbar {
+    padding: 8px 12px; 
+    border-radius: 12px;
+    .input-box {
+      height: 35px;
+      width: 40%;
+      .house-icon {
+        font-size: 14px;
+        margin-right: 5px;
+        width: 10%;
+      }
+      input {
+        @include p2();
+        width: 90%;
+      }
+    }
+  
+    select{
+        @include p2(); 
+    }
+  
+    button {
+      padding: 6px;
+      .upright-arrow-icon {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+// mobile
+@media (max-width: 440px){
+
+  .searchbar {
+    padding: 7px 12px; 
+    border-radius: 12px;
+
+    .input-box {
+      height: 35px;
+      width: 40%;
+      .house-icon {
+        font-size: 12px;
+        margin-right: 5px;
+        width: 10%;
+      }
+      input {
+        @include p3();
+        width: 90%;
+      }
+    }
+  
+    select{
+        @include p3(); 
+    }
+  
+    button {
+      padding: 6px;
+      .upright-arrow-icon {
+        font-size: 12px;
+      }
+    }
+  }
+}
+

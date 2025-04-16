@@ -1,0 +1,626 @@
+@import "../../mixins.scss";
+
+.direct-tv-sports {
+  position: relative;
+  .inner-hero {
+    width: 100%;
+    background: url('/hero-bg.svg') center,
+      linear-gradient(
+        to right,
+        var(--primary-color),
+        var(--secondary-color-one)
+      );
+    background-size: cover;
+
+    .head {
+      margin-top: 20px;
+      .sect-heading,
+      .sect-desc {
+        color: #fff;
+      }
+    }
+  }
+  .is-direct-tv-good {
+    background: var(--secondary-color-three);
+    padding: 80px 5%;
+    .bold-blue {
+      color: #0070ff;
+      @include h6;
+    }
+    .custom-table {
+      box-shadow: var(--secndary-shadow);
+      table {
+        table-layout: fixed;
+        thead {
+          tr {
+            th {
+              text-align: center;
+              .icon {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+        tbody {
+          background: var(--secondary-color-three);
+          tr {
+            td:nth-of-type(1) {
+              color: #000;
+            }
+            td {
+              text-align: center !important;
+            }
+          }
+        }
+      }
+    }
+    ul {
+      list-style: none;
+      margin: 0px;
+      li {
+        b {
+          @include p2($fw: bold);
+        }
+      }
+    }
+  }
+  .important-links {
+    .all-links {
+      @include flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      a {
+        padding: 12px;
+        margin: 12px;
+        @include p2($fw: 400);
+        text-decoration: underline;
+        color: var(--primary-color);
+        border: none;
+        border-radius: 24px;
+        background: #e6f1ff;
+        transition: var(--basic);
+        text-align: center;
+        &:hover {
+          color: var(--secondary-color-two);
+          background: var(--primary-color);
+        }
+      }
+    }
+  }
+  .direct-tv-blank {
+    background: var(--secondary-color-three);
+    .channels {
+      background-color: var(--secondary-color-two);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+      img.mark {
+        width: 44px;
+        margin: 0px 0px 25px;
+      }
+      a {
+        @include p2($fw: 400);
+        color: #0070ff;
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+      ul {
+        li {
+          @include p3();
+          font-weight: 400;
+          span {
+            a {
+              @include p2($fw: 300);
+              color: #0070ff;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      hr.hr {
+        border-color: #0070ff;
+        margin: 15px 0px;
+      }
+      .btn {
+        overflow: hidden;
+        padding: 22px 0 22px 0;
+        @include p2($fw: 400);
+        color: var(--secondary-color-one);
+        text-transform: capitalize;
+
+        &:nth-of-type(1) {
+          color: #a5a5a5;
+          text-align: right;
+        }
+        a {
+          background: var(--primary-color);
+          padding: 11px 24px;
+          border: none;
+          border-radius: 12px 0 12px 0;
+          color: var(--secondary-color-two);
+          @include btActive;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+          transition: var(--basic);
+          &:hover {
+            border-radius: 0 12px 0 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .direct-tv-sports-packages {
+    background: var(--secondary-color-two);
+    table {
+      tbody {
+        background-color: var(--secondary-color-three);
+        svg.cross-icon {
+          background: #a5a5a5;
+          color: #fff;
+          padding: 6px;
+          border-radius: 50px;
+          width: 24px;
+          height: 24px;
+        }
+        svg.check-icon {
+          background: #0070ff;
+          color: #fff;
+          padding: 6px;
+          border-radius: 50px;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+    .below-table {
+      text-align: center;
+      font-style: italic;
+      @include p3();
+      font-weight: 400px;
+    }
+    table {
+      tbody {
+        background-color: var(--secondary-color-three);
+      }
+    }
+    .channels {
+      background-color: var(--secondary-color-three);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+      .after-heading {
+        margin-top: 10px;
+        a {
+          @include p2($fw: 300);
+          color: #0070ff;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+      table {
+        tbody {
+          background-color: var(--secondary-color-two);
+        }
+      }
+      .btn {
+        overflow: hidden;
+        padding: 22px 0 22px 0;
+        @include p2($fw: 400);
+        color: var(--secondary-color-one);
+        text-transform: capitalize;
+        text-align: end;
+
+        &:nth-of-type(1) {
+          color: #a5a5a5;
+          text-align: right;
+        }
+        a {
+          background: var(--primary-color);
+          padding: 11px 24px;
+          border: none;
+          border-radius: 12px 0 12px 0;
+          color: var(--secondary-color-two);
+          @include btActive;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+          transition: var(--basic);
+          &:hover {
+            border-radius: 0 12px 0 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+      .channel-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: disc;
+        padding: 20px;
+        li {
+          @include p2($fw: 300);
+        }
+      }
+      .left {
+        text-align: left;
+      }
+      p {
+        span {
+          a {
+            @include p2($fw: 300);
+            color: #0070ff;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      hr {
+        border-color: var(--primary-color);
+        margin-top: 20px;
+      }
+      img.mark {
+        width: 44px;
+        margin: 0px 0px 25px;
+      }
+      ul {
+        margin: 0px;
+        li {
+          @include p2($fw: 300);
+          b {
+            @include p2($fw: 600);
+          }
+        }
+      }
+      .channel-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: none;
+        padding: 20px 0px 20px 0px;
+        margin: 0px;
+        li {
+          @include p2($fw: 300);
+        }
+      }
+    }
+  }
+  .direct-tv-sports-channels {
+    background: var(--secondary-color-three);
+    table {
+      tbody {
+        background-color: var(--secondary-color-two);
+        svg.cross-icon {
+          background: #a5a5a5;
+          color: #fff;
+          padding: 6px;
+          border-radius: 50px;
+          width: 24px;
+          height: 24px;
+        }
+        svg.check-icon {
+          background: #0070ff;
+          color: #fff;
+          padding: 6px;
+          border-radius: 50px;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+    .below-table {
+      text-align: center;
+      font-style: italic;
+      @include p3();
+      font-weight: 400px;
+    }
+    table {
+      tbody {
+        background-color: var(--secondary-color-two);
+      }
+    }
+    .channels {
+      background-color: var(--secondary-color-two);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+      .after-heading {
+        margin-top: 10px;
+        a {
+          @include p2($fw: 300);
+          color: #0070ff;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+      table {
+        tbody {
+          background-color: var(--secondary-color-two);
+        }
+      }
+      .btn {
+        overflow: hidden;
+        padding: 22px 0 22px 0;
+        @include p2($fw: 400);
+        color: var(--secondary-color-one);
+        text-transform: capitalize;
+        text-align: end;
+
+        &:nth-of-type(1) {
+          color: #a5a5a5;
+          text-align: right;
+        }
+        a {
+          background: var(--primary-color);
+          padding: 11px 24px;
+          border: none;
+          border-radius: 12px 0 12px 0;
+          color: var(--secondary-color-two);
+          @include btActive;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+          transition: var(--basic);
+          &:hover {
+            border-radius: 0 12px 0 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+      .channel-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: disc;
+        padding: 20px;
+        li {
+          @include p2($fw: 300);
+        }
+      }
+      .left {
+        text-align: left;
+      }
+      p {
+        span {
+          a {
+            @include p2($fw: 300);
+            color: #0070ff;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      hr {
+        border-color: var(--primary-color);
+        margin-top: 20px;
+      }
+      img.mark {
+        width: 44px;
+        margin: 0px 0px 25px;
+      }
+      ul {
+        margin: 0px;
+        li {
+          @include p2($fw: 300);
+          b {
+            @include p2($fw: 600);
+          }
+        }
+      }
+      .channel-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: none;
+        padding: 20px 0px 20px 0px;
+        margin: 0px;
+        li {
+          @include p2($fw: 300);
+        }
+      }
+    }
+  }
+  .direct-tv-sports-networks {
+    background: var(--secondary-color-two);
+    table {
+      tbody {
+        background-color: var(--secondary-color-three);
+        svg.cross-icon {
+          background: #a5a5a5;
+          color: #fff;
+          padding: 6px;
+          border-radius: 50px;
+          width: 24px;
+          height: 24px;
+        }
+        svg.check-icon {
+          background: #0070ff;
+          color: #fff;
+          padding: 6px;
+          border-radius: 50px;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+    .below-table {
+      text-align: center;
+      font-style: italic;
+      @include p3();
+      font-weight: 400px;
+    }
+    table {
+      tbody {
+        background-color: var(--secondary-color-three);
+      }
+    }
+    .channels {
+      background-color: var(--secondary-color-three);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+      .after-heading {
+        margin-top: 10px;
+        a {
+          @include p2($fw: 300);
+          color: #0070ff;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+      table {
+        tbody {
+          background-color: var(--secondary-color-three);
+        }
+      }
+      .btn {
+        overflow: hidden;
+        padding: 22px 0 22px 0;
+        @include p2($fw: 400);
+        color: var(--secondary-color-one);
+        text-transform: capitalize;
+        text-align: end;
+
+        &:nth-of-type(1) {
+          color: #a5a5a5;
+          text-align: right;
+        }
+        a {
+          background: var(--primary-color);
+          padding: 11px 24px;
+          border: none;
+          border-radius: 12px 0 12px 0;
+          color: var(--secondary-color-two);
+          @include btActive;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+          transition: var(--basic);
+          &:hover {
+            border-radius: 0 12px 0 12px;
+            text-decoration: underline;
+          }
+        }
+      }
+      .channel-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: disc;
+        padding: 20px;
+        li {
+          @include p2($fw: 300);
+        }
+      }
+      .left {
+        text-align: left;
+      }
+      p {
+        span {
+          a {
+            @include p2($fw: 300);
+            color: #0070ff;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      hr {
+        border-color: var(--primary-color);
+        margin-top: 20px;
+      }
+      img.mark {
+        width: 44px;
+        margin: 0px 0px 25px;
+      }
+      ul {
+        margin: 0px;
+        li {
+          @include p2($fw: 300);
+          b {
+            @include p2($fw: 600);
+          }
+        }
+      }
+      .channel-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: none;
+        padding: 20px 0px 20px 0px;
+        margin: 0px;
+        li {
+          @include p2($fw: 300);
+        }
+      }
+    }
+  }
+  .direct-tv-sports-language-sports-offerings {
+    background: var(--secondary-color-three);
+    table {
+      tbody {
+        background-color: var(--secondary-color-two);
+      }
+    }
+    .below-table {
+      text-align: center;
+      font-style: italic;
+      @include p3();
+      font-weight: 400px;
+    }
+  }
+  .final-take {
+    .all-links {
+      @include flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      a {
+        padding: 12px;
+        margin: 12px;
+        @include p2($fw: 400);
+        text-decoration: underline;
+        color: var(--primary-color);
+        border: none;
+        border-radius: 24px;
+        background: #e6f1ff;
+        transition: var(--basic);
+        text-align: center;
+        &:hover {
+          color: var(--secondary-color-two);
+          background: var(--primary-color);
+        }
+      }
+    }
+  }
+  .direct-tv-faq {
+    background: var(--secondary-color-three);
+    .accordion {
+      .item {
+        background: var(--secondary-color-two);
+      }
+    }
+  }
+  .direct-tv-endnote {
+    padding: 80px 5%;
+    background: var(--secondary-color-two);
+    .endnote-container {
+      background: var(--secondary-color-three);
+      ul {
+        list-style: none;
+        margin-top: 15px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 15px;
+        li {
+          span {
+            a {
+              @include p2($fw: 400);
+              color: #0070ff;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      .endnote-review {
+        @include p1($fw: 300);
+      }
+    }
+  }
+}

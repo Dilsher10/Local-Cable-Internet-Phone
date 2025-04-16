@@ -1,0 +1,234 @@
+@import "../../mixins.scss";
+
+.main-footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10vh 5%;
+    row-gap: 20px;
+    .footer-1{
+        width: 40%;
+        .logo{
+            display: inline-block;
+            width: 50%;
+            margin-bottom: 50px;
+        }
+        .form{
+            margin: 10px auto 15px 0px;
+            width: 90%;
+            .searchbar{
+                background-color: #f5f5f5;
+                padding: 2% 2%;
+                .input-box{
+                    .house-icon{
+                        font-size: 15px
+                    }
+                    input{
+                        @include p3;
+                    }
+                }
+                select{
+                    @include p2;
+                }
+                button{
+                    .upright-arrow-icon {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        p{
+            @include p2;
+        }
+    }
+    .footer-2{
+        width: 60%;
+        display: flex;
+        padding: 0 5%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        h2{
+            @include h6;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+    }
+    .footer-3{
+        width: 100%;
+        padding: 40px 0px;
+        border-top: 1px solid black;
+        box-sizing: border-box;
+
+        .bottom-left{
+            display: inline-flex;
+            width: 85%;
+            
+            p{
+                @include p2;
+                display: inline-block;
+            }
+            .bottom-links{
+                display: flex;
+                flex: 1;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                a{
+                    @include p2($fw: 600);
+                    color: var(--primary-color);
+                    margin: 0px 8px;
+                }
+            }
+        }
+        .bottom-right{
+            display: inline-flex;
+            width: 15%;
+            justify-content: flex-end;
+            column-gap: 10px;
+            img{
+                width: auto;
+                min-height: 20px;
+                height: auto;
+                margin: 0px;
+            }
+        }
+    }
+    .footer-links{
+        a{
+            display: block;
+            @include p2;
+            color: var(--secondary-color-one);
+            line-height: 40px;
+        }
+    }
+}
+// tablet
+@media (min-width: 441px) and (max-width: 1000px){
+    .main-footer{
+        flex-direction: column;
+        row-gap: 50px;
+        .footer-1{
+            width: 100%;
+            .logo{
+                width: 50%;
+                max-width: 300px;
+                margin-bottom: 40px;
+            }
+            .form{
+                width: 100%;
+            }
+            p{
+                @include p3;
+            }
+        }
+        .footer-2{
+            width: 100%;
+            padding: 0;
+            
+        }
+        .footer-3{
+            display: flex;
+            flex-wrap: wrap;
+            .bottom-left{
+                flex-direction: column;
+                width: 65%;
+                row-gap: 20px;
+                p{
+                    @include p3;
+                    display: inline-block;
+                }
+                .bottom-links{
+                    display: flex;
+                    flex: 1;
+                    column-gap: 10px;
+                    row-gap: 10px;
+                    a{
+                        @include p3($fw: 600);
+                        margin: 0px;
+                    }
+                }
+            }
+            .bottom-right{
+                align-items: stretch;
+                width: 35%;
+                justify-content: flex-end;
+                flex: 1;
+                img{
+                    max-height: 20px;
+                }
+            }
+        }
+        .footer-links{
+            a{
+                @include p3;
+            }
+        }
+    }
+}
+
+// mobile
+@media (max-width: 440px){       
+    .main-footer{
+        flex-direction: column;
+        row-gap: 50px;
+        .footer-1{
+            width: 100%;
+            .logo{
+                width: 70%;
+                max-width: 300px;
+                margin-bottom: 20px;
+            }
+            .form{
+                width: 100%;
+            }
+            p{
+                @include p3;
+            }
+        }
+        .footer-2{
+            width: 100%;
+            padding: 0;
+            row-gap: 20px;
+            .tv-providers{
+                min-width: 40%;
+            }
+        }
+        .footer-3{
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 15px;
+            padding: 20px 0px;
+            .bottom-left{
+                flex-direction: column;
+                width: 100%;
+                row-gap: 20px;
+                p{
+                    @include p3;
+                    display: inline-block;
+                }
+                .bottom-links{
+                    display: flex;
+                    flex: 1;
+                    row-gap: 10px;
+                    flex-direction: column;
+                    a{
+                        @include p3($fw: 600);
+                        margin: 0px;
+                    }
+                }
+            }
+            .bottom-right{
+                align-items: stretch;
+                width: 100%;
+                justify-content: flex-start;
+                flex: 1;
+                img{
+                    max-height: 20px;
+                }
+            }
+        }
+        .footer-links{
+            a{
+                @include p3;
+            }
+        }
+    }
+}
