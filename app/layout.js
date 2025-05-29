@@ -3,12 +3,13 @@ import { Lato } from "next/font/google";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Newsletter from "./components/newsletter/Newsletter";
+import { RootContext } from "./components/context/RootContext";
 
-const lato = Lato({ 
-  weight: ["100","300","400","700","900"],   
+const lato = Lato({
+  weight: ["100", "300", "400", "700", "900"],
   display: "swap",
   subsets: ["latin"]
- });
+});
 
 export const metadata = {
   title: "Explore High speed and Reliable TV, Internet, and Streaming Services | LocalCableInternetPhone",
@@ -18,12 +19,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html>
-      <body className={lato.className}>
-        <Header/>
-        {children}
-        <Newsletter />
-        <Footer/>
-      </body>
+      <RootContext>
+        <body className={lato.className}>
+          <Header />
+          {children}
+          <Newsletter />
+          <Footer />
+        </body>
+      </RootContext>
     </html>
   );
 }
