@@ -7,74 +7,84 @@ export const internetProvidersOffer = [
   {
     img: spectrum,
     tagName: "Fastest",
-    packageName: "Spectrum Internet® Ultra",
+    packageName: "T-Mobile 5G Home Internet",
     packagePoints: [
-      "Download speeds up to 500 Mbps",
-      "Best for gamer and large families",
-      "Get a free modem",
+      "The initial plan is starting from $35.00/mo",
+      "15-day trial for coverage check",
+      "Free 2-day shipping",
+      "Customer Rating: 4.0/5"
     ],
-    price: "$69.99/mo.",
+    price: "$35.00/mo.",
     linkPath: "#"
   },
 
   {
-    img: dish,
+    img: atandt,
     tagName: "Most flexible",
-    packageName: "America’s Everything Pack",
+    packageName: "AT&T Fiber",
     packagePoints: [
-      "205+ channels",
-      "Premium channels",
-      "4k Quality + HD Quality",
+      "The internet plan starts from $55.00/mo",
+      "24/7 customer service",
+      "Reliable wireless home networking",
+      "Customer Rating: 4.5/5"
     ],
-    price: "$137.99/mo.",
+    price: "$55.00/mo.",
     linkPath: "#"
   },
 
   {
     img: atandt,
     tagName: "Editor's choice",
-    packageName: "Ultimate TV*",
-    packagePoints: ["185+ channels", "Premium channels"],
-    price: "$68.50/mo.",
+    packageName: "EarthLink",
+    packagePoints: [
+      "The internet plan pricing is from $49.95/mo",
+      "Free virus & spam protection",
+      "Reduced equipment rental fees",
+      "Customer Rating: 4.0/5"
+    ],
+    price: "$49.95/mo.",
+    linkPath: "#"
+  },
+
+  {
+    img: spectrum,
+    tagName: "Cheapest",
+    packageName: "Spectrum",
+    packagePoints: [
+      "The internet plan starts from $30.00/mo.",
+      "No data caps",
+      "Option to bundle with TV & mobile",
+      "Customer Rating: 3.8/5"
+    ],
+    price: "$30.00/mo.",
     linkPath: "#"
   },
 
   {
     img: optimum,
     tagName: "Cheapest",
-    packageName: "Optimum 300",
+    packageName: "Frontier Fiber",
     packagePoints: [
-      "Download speeds up to 300 Mbps",
-      "Upload speeds up to 20 Mbps",
-      "Great for most households",
+      "Priceing is starting from $29.99/mo",
+      "Free installation on select plans",
+      "Great rural access",
+      "Customer Rating: 4.1/5"
     ],
-    price: "$40.00/mo.",
+    price: "$29.99/mo.",
     linkPath: "#"
   },
 
   {
     img: optimum,
     tagName: "Cheapest",
-    packageName: "Optimum 300",
+    packageName: "Brightspeed",
     packagePoints: [
-      "Download speeds up to 300 Mbps",
-      "Upload speeds up to 20 Mbps",
-      "Great for most households",
+      "The basic plan starts at $29.00/mo",
+      "Get a prepaid card of $200 by signing up for Brightspeed Fiber",
+      "Fiber expansion across 67% of Texas",
+      "Popular in rural and underserved markets"
     ],
-    price: "$40.00/mo.",
-    linkPath: "#"
-  },
-
-  {
-    img: optimum,
-    tagName: "Cheapest",
-    packageName: "Optimum 300",
-    packagePoints: [
-      "Download speeds up to 300 Mbps",
-      "Upload speeds up to 20 Mbps",
-      "Great for most households",
-    ],
-    price: "$40.00/mo.",
+    price: "$29.00/mo.",
     linkPath: "#"
   },
 ];

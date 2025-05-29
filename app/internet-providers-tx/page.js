@@ -30,7 +30,7 @@ import xfinity from "../assets/images/brand-logos/xfinity.svg";
 import hulu from "../assets/images/brand-logos/hulu.svg";
 import dish from "../assets/images/brand-logos/dish-network.svg";
 import InfoCard from "../components/info-card-home/InfoCard";
-import { infoCards } from "../assets/data/infoCards";
+import { internetInfoCards } from "../assets/data/internetInfoCards";
 
 
 export default function Page() {
@@ -165,7 +165,6 @@ export default function Page() {
           </h2>
         </div>
         <div className="package-table-container west-region">
-          <h4>Xfinity TV: West region</h4>
           <PackageTable item={packageTableData} />
         </div>
       </div>
@@ -183,13 +182,13 @@ export default function Page() {
           </div>
           <div class="item2">
             <Image src={BoxThree} alt="thumbnail" />
-            <h2 className="title">Best Internet Providers in Texas</h2>
-              <p className="desc">Some of the top-notch internet service providers in Texas are Spectrum, AT&T, Google Fiber, and Frontier. These Texas internet providers offer various types of internet services, which involve fiber, cable, DSL, and satellite.</p>
+            <h2 className="title">Top Choice for Texas Internet Speed</h2>
+            <p className="desc">The top Texas ISPs that present their customers with high-speed internet such as AT&T Fiber and Google Fiber. These internet providers in Texas are also known for their robust gigabit internet plans with appealing pricing. They also offer unlimited data options with no quarterly or yearly contract requirements.</p>
           </div>
           <div class="item3">
             <div>
-              <h2 className="title">Best Internet Providers in Texas</h2>
-              <p className="desc">Some of the top-notch internet service providers in Texas are Spectrum, AT&T, Google Fiber, and Frontier. These Texas internet providers offer various types of internet services, which involve fiber, cable, DSL, and satellite.</p>
+              <h2 className="title">Affordable Texas Internet Options</h2>
+              <p className="desc">Everyone wants to go for the affordable internet service providers in Texas. There are budget-friendly internet providers who are the best choice for cost-conscious customers. These Texas internet providers include Frontier and Astound, offering the low cost affordable internet plans.</p>
             </div>
             <div>
               <Image src={BoxTwo} alt="thumbnail" />
@@ -198,11 +197,6 @@ export default function Page() {
         </div>
       </div>
 
-
-
-
-
-
       <CTA
         heading={"Ready to start watching your favorite shows?"}
         desc={
@@ -210,13 +204,10 @@ export default function Page() {
         }
       />
 
-
-
-
       <div className="section best-internet-tv-offer">
         <div className="head">
           <h2 className="sect-heading">
-            Optimal Offers for <span> Internet and TV </span> Services
+            Featured Offers from Top <span>Texas</span> Internet Providers
           </h2>
         </div>
 
@@ -240,26 +231,16 @@ export default function Page() {
       <div className="section xfinity-tv-equipments">
         <div className="head">
           <h2 className="sect-heading">
-            Experience <span>top user-rated</span> Xfinity TV equipment and
-            services
+            Texas Internet Coverage & Availability in 2025
           </h2>
-          <p className="sect-desc">
-            From the advanced X1 to its award-winning voice remote, Xfinity has
-            some of the best TV equipment on the market. But what do Xfinity’s
-            actual customers think? Check out our annual TV customer satisfaction survey
-            to see how Xfinity TV equipment compares to the competition.
-          </p>
         </div>
         <div className="sideimg-card">
           <Image src={IconOne} alt="thumbnail" />
           <div className="sideimg-card-content">
-            <h4 className="title">Xfinity X1 DVR</h4>
+            <h4 className="title">Internet Ranking of Texas</h4>
             <div className="desc">
               <p>
-                You showed up to save money, and we’re here for it. When you
-                pick the right Xfinity bundle, you’ll get exactly what you
-                deserve—a great deal. We’ve researched prices and compiled
-                pricing comparison tables for
+                The internet ranking of Texas is 12th across all the states according to BroadbandNow’s annual rankings. BroadbandNow releases these yearly rankings showcasing internet speed, accessibility, and overall coverage.
               </p>
             </div>
           </div>
@@ -267,13 +248,10 @@ export default function Page() {
         <div className="sideimg-card">
           <Image src={IconTwo} alt="thumbnail" />
           <div className="sideimg-card-content">
-            <h4 className="title">Xfinity X1 DVR</h4>
+            <h4 className="title">Access to Wired or Fixed Wireless Broadband</h4>
             <div className="desc">
               <p>
-                You showed up to save money, and we’re here for it. When you
-                pick the right Xfinity bundle, you’ll get exactly what you
-                deserve—a great deal. We’ve researched prices and compiled
-                pricing comparison tables for
+                About 9 out of 10 Texas residents have access to the internet in the state. The average downloading speed is about 25 Mbps, and uploading is 3 Mbps. In percent, the accessibility to customers is above 92% for wires or fixed wireless broadband.
               </p>
             </div>
           </div>
@@ -281,13 +259,10 @@ export default function Page() {
         <div className="sideimg-card">
           <Image src={IconThree} alt="thumbnail" />
           <div className="sideimg-card-content">
-            <h4 className="title">Xfinity X1 DVR</h4>
+            <h4 className="title">Access to Wired Low-Priced Broadband Plans</h4>
             <div className="desc">
               <p>
-                You showed up to save money, and we’re here for it. When you
-                pick the right Xfinity bundle, you’ll get exactly what you
-                deserve—a great deal. We’ve researched prices and compiled
-                pricing comparison tables for
+                More than 80% of Texans have access to broadband internet plans that are priced at $60/month or even less. Every 8 to 10 citizens of Texas have direct reach to affordable internet services.
               </p>
             </div>
           </div>
@@ -295,13 +270,10 @@ export default function Page() {
         <div className="sideimg-card">
           <Image src={IconFour} alt="thumbnail" />
           <div className="sideimg-card-content">
-            <h4 className="title">Xfinity X1 DVR</h4>
+            <h4 className="title">Access to Fiber-Optic Service</h4>
             <div className="desc">
               <p>
-                You showed up to save money, and we’re here for it. When you
-                pick the right Xfinity bundle, you’ll get exactly what you
-                deserve—a great deal. We’ve researched prices and compiled
-                pricing comparison tables for
+                Fiber-optic internet is available for 55% of the Texas residents. This provides a special expansion opportunity for internet providers in Texas.
               </p>
             </div>
           </div>
@@ -309,37 +281,28 @@ export default function Page() {
         <div className="sideimg-card">
           <Image src={IconFive} alt="thumbnail" />
           <div className="sideimg-card-content">
-            <h4 className="title">Xfinity X1 DVR</h4>
+            <h4 className="title">Number of Internet Providers in Texas</h4>
             <div className="desc">
               <p>
-                You showed up to save money, and we’re here for it. When you
-                pick the right Xfinity bundle, you’ll get exactly what you
-                deserve—a great deal. We’ve researched prices and compiled
-                pricing comparison tables for
+                There are several internet providers in Texas. The counting goes by 535 internet service providers present in Texas. Most of the Texas internet providers cover local internet services.
               </p>
             </div>
           </div>
         </div>
       </div>
 
-
-
-
       <div className="info-cards-section section">
         <div className="head">
           <h2 className="sect-heading">
-            Transform Your <span>Viewing</span> And <span> Surfing </span>{" "}
-            Experience
+            Types of <span>Internet Options</span> in <span> Texas </span>
           </h2>
           <p className="sect-desc">
-            Simplify and Accelerate Your Quest for Top-tier TV and Internet
-            Options in Your Area with LocalCableInternetPhone’s User-Friendly
-            Platform
+            Let’s find out about the various internet options available in Texas.
           </p>
         </div>
 
         <div className="cards">
-          {infoCards.map((item, index) => (
+          {internetInfoCards.map((item, index) => (
             <InfoCard
               key={index}
               icon={item.icon}
@@ -352,24 +315,19 @@ export default function Page() {
         </div>
       </div>
 
-
-
       <div className="section xfinity-bundles">
         <div className="watch-card">
           <div className="watch-card-content">
             <h4 className="title">
-              Save up to $60 per month with Xfinity bundles <br /> and deals
+              Texas Internet Providers Comparison with Other States
             </h4>
             <p className="desc">
-              You showed up to save money, and we’re here for it. When you pick
-              the right Xfinity bundle, you’ll get exactly what you deserve—a
-              great deal. We’ve researched prices and compiled pricing
-              comparison tables for Xfinity TV bundle deals in your area.
+              Find out the internet providers in Texas. Compare the pricing, speed, and different deals among the different US States.
             </p>
-            <p className="desc">
-              In addition to your budget-friendly bundling options, please go
-              crazy with all of Xfinity’s current deals and promotions.
-            </p>
+            <ul className="desc">
+              <li className="desc">Internet providers in Colorado</li>
+              <li className="desc">Internet providers in California</li>
+            </ul>
           </div>
           <div>
             <Image src={UsMap} alt="thumbnail" className="usMap" />
@@ -383,159 +341,37 @@ export default function Page() {
       <div className="section xfinity-tv-faq">
         <div className="head">
           <h2 className="sect-heading">
-            Xfinity <span>TV</span> FAQ
+            FAQs
           </h2>
-
-          <p className="sect-desc">
-            TL;DR? Xfinity kills it. For more detailed info on all Xfinity
-            equipment and services, see our comprehensive Xfinity equipment
-            guide.
-          </p>
         </div>
-
         <div className="faq-wrapper">
           <Accordion
             id={"2"}
-            title={"What are Xfinity TV packages?"}
+            title={"What is the best internet provider in Texas?"}
             cssClass={"faq-content"}
           >
             <p>
-              Xfinity TV packages by Comcast come through a cable connection
-              with up to 185+ channels. Most packages also include 20 hours of
-              DVR storage via the X1 DVR box, plus the Xfinity Stream app.
-            </p>
-            <ul>
-              <li>
-                <span className="bold">Choice TV: </span>
-                $20.00–$25.00/mo., 10+ channels
-              </li>
-              <li>
-                <span className="bold">Popular TV: </span>
-                $50.00–$60.00/mo., 125+ channels
-              </li>
-              <li>
-                <span className="bold">Ultimate TV: </span>
-                $68.50–$80.00/mo., 185+ channels
-              </li>
-            </ul>
-
-            <p>
-              Check to see what Xfinity TV packages are available in your area.
+              Spectrum and AT&T are considered the top-notch internet service providers in Texas. These internet service providers are well known for their affordable pricing and fast-speed internet.
             </p>
           </Accordion>
 
           <Accordion
             id={"3"}
-            title={"What is the cheapest Xfinity TV package?"}
+            title={"What is the average customer satisfaction with internet services in Texas?"}
             cssClass={"faq-content"}
           >
             <p>
-              The cheapest Xfinity TV package is{" "}
-              <span className="bold"> Choice TV</span>, a basic cable package
-              that offers 10+ channels for $20.00–$25.00/mo.
-            </p>
-            <p>
-              The cheapest regular cable package is{" "}
-              <span className="bold"> Popular TV</span> ($50.00–$60.00/mo., 125+
-              channels).
-            </p>
-            <p>
-              Looking for more ways to cut monthly costs? We like the way you
-              think! View Xfinity’s{" "}
-              <span className="link">
-                <Link href={"#"}>current deals and promotions</Link>
-              </span>
-              .
+              Texas residents rate their internet services an average of 3.7 out of 5 stars, placing the state 21st nationally for customer satisfaction.
             </p>
           </Accordion>
 
           <Accordion
             id={"4"}
-            title={"What are Xfinity TV packages?"}
+            title={"Which cities in Texas have the fastest internet speeds?"}
             cssClass={"faq-content"}
           >
             <p>
-              Xfinity TV packages by Comcast come through a cable connection
-              with up to 185+ channels. Most packages also include 20 hours of
-              DVR storage via the X1 DVR box, plus the Xfinity Stream app.
-            </p>
-            <ul>
-              <li>
-                <span className="bold">Choice TV: </span>
-                $20.00–$25.00/mo., 10+ channels
-              </li>
-              <li>
-                <span className="bold">Popular TV: </span>
-                $50.00–$60.00/mo., 125+ channels
-              </li>
-              <li>
-                <span className="bold">Ultimate TV: </span>
-                $68.50–$80.00/mo., 185+ channels
-              </li>
-            </ul>
-
-            <p>
-              Check to see what Xfinity TV packages are available in your area.
-            </p>
-          </Accordion>
-
-          <Accordion
-            id={"5"}
-            title={"What are Xfinity TV packages?"}
-            cssClass={"faq-content"}
-          >
-            <p>
-              Xfinity TV packages by Comcast come through a cable connection
-              with up to 185+ channels. Most packages also include 20 hours of
-              DVR storage via the X1 DVR box, plus the Xfinity Stream app.
-            </p>
-            <ul>
-              <li>
-                <span className="bold">Choice TV: </span>
-                $20.00–$25.00/mo., 10+ channels
-              </li>
-              <li>
-                <span className="bold">Popular TV: </span>
-                $50.00–$60.00/mo., 125+ channels
-              </li>
-              <li>
-                <span className="bold">Ultimate TV: </span>
-                $68.50–$80.00/mo., 185+ channels
-              </li>
-            </ul>
-
-            <p>
-              Check to see what Xfinity TV packages are available in your area.
-            </p>
-          </Accordion>
-
-          <Accordion
-            id={"6"}
-            title={"What are Xfinity TV packages?"}
-            cssClass={"faq-content"}
-          >
-            <p>
-              Xfinity TV packages by Comcast come through a cable connection
-              with up to 185+ channels. Most packages also include 20 hours of
-              DVR storage via the X1 DVR box, plus the Xfinity Stream app.
-            </p>
-            <ul>
-              <li>
-                <span className="bold">Choice TV: </span>
-                $20.00–$25.00/mo., 10+ channels
-              </li>
-              <li>
-                <span className="bold">Popular TV: </span>
-                $50.00–$60.00/mo., 125+ channels
-              </li>
-              <li>
-                <span className="bold">Ultimate TV: </span>
-                $68.50–$80.00/mo., 185+ channels
-              </li>
-            </ul>
-
-            <p>
-              Check to see what Xfinity TV packages are available in your area.
+              Burleson, Princeton, and Manor are cities with the fastest internet speeds, with Burleson achieving an average download speed of 386.56 Mbps.
             </p>
           </Accordion>
         </div>

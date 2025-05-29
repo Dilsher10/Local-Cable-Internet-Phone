@@ -3,7 +3,7 @@
 .package-card {
   min-width: 392px;
   max-width: 392px;
-  min-height: 385px;
+  min-height: 350px;
   background-color: var(--secondary-color-two);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
   border-radius: 24px;
@@ -47,7 +47,7 @@
     .package-name {
       @include h5;
       color: var(--secondary-color-one);
-      margin: 10px auto;
+      margin: 30px auto;
     }
 
     .package-points {
