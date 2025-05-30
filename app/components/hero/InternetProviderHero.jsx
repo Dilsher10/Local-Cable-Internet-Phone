@@ -11,7 +11,7 @@ const Hero = () => {
                 <p>Are you looking for the best internet service provider in Texas? We present you with the plans and pricing of Texas internet providers. Check out the speed, flexibility, and accessibility you require, whether working remotely from a ranch in West Texas, streaming in Austin, or gaming in Houston.</p>
             </div>
             <div className="hero-sideimg">
-                <Image src={heroSideimg} alt="what localcableinternetphone provides" />
+                <Image src={heroSideimg} alt="what localcableinternetphone provides" className='netHero'/>
             </div>
         </div>
     )

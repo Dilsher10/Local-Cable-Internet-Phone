@@ -1,11 +1,13 @@
 import spectrum from "../images/brand-logos/spectrum.svg";
-import dish from "../images/brand-logos/dish-network.svg";
 import atandt from "../images/brand-logos/at&t.svg";
-import optimum from "../images/brand-logos/optimum.svg";
+import HomeNet from "../images/brand-logos/home-internet.png";
+import EarthL from "../images/brand-logos/EarthL.png";
+import Frontier from "../images/brand-logos/frontier.png";
+import Brightspeed from "../images/brand-logos/brightspeed.png";
 
 export const internetProvidersOffer = [
   {
-    img: spectrum,
+    img: HomeNet,
     tagName: "Fastest",
     packageName: "T-Mobile 5G Home Internet",
     packagePoints: [
@@ -33,7 +35,7 @@ export const internetProvidersOffer = [
   },
 
   {
-    img: atandt,
+    img: EarthL,
     tagName: "Editor's choice",
     packageName: "EarthLink",
     packagePoints: [
@@ -61,7 +63,7 @@ export const internetProvidersOffer = [
   },
 
   {
-    img: optimum,
+    img: Frontier,
     tagName: "Cheapest",
     packageName: "Frontier Fiber",
     packagePoints: [
@@ -75,7 +77,7 @@ export const internetProvidersOffer = [
   },
 
   {
-    img: optimum,
+    img: Brightspeed,
     tagName: "Cheapest",
     packageName: "Brightspeed",
     packagePoints: [

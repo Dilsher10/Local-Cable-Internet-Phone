@@ -8,7 +8,7 @@ import UsMap from "../assets/images/internet-provider/usmap.png";
 import BoxOne from "../assets/images/internet-provider/box-1.PNG";
 import BoxTwo from "../assets/images/internet-provider/box-2.PNG";
 import BoxThree from "../assets/images/internet-provider/box-3.PNG";
-import PackageTable from "../components/package-table/PackageTable";
+import InternetPackageTable from "../components/package-table/InternetPackageTable";
 import Accordion from "../components/accordion/Accordion";
 import CTA from "../components/cta-section/CTA";
 import InternetProviderCard from "../components/internet-provider-card/InternetProviderCard";
@@ -38,79 +38,124 @@ export default function Page() {
   let packageTableData = [
     {
       head: [
-        "Top packages",
-        "Price",
-        "Channels",
-        "Popular channels",
-        "column name",
-        "Internet speed",
-        "Details",
+        "Internet Provider",
+        "Availability in Texas",
+        "Download Speed (Mbps)",
+        "Upload Speed (Mbps)",
       ],
 
       body: [
         {
           content: [
             "1.",
-            "Popular TV",
-            "$50.00/mo.",
-            "125+",
-            "AMC, Comedy Central, Disney Channel",
-            "$0.40",
-            "N/A",
+            "T-Mobile",
+            "39%",
+            "245",
+            "31",
           ],
-          linkPath: "#",
         },
 
         {
           content: [
             "2.",
-            "Ultimate TV",
-            "$68.50/mo.",
-            "185+",
-            "IFC, Disney XD, Nat Geo Wild",
-            "$0.37",
-            "N/A",
+            "AT&T",
+            "36%",
+            "5,000",
+            "5,000",
           ],
-          linkPath: "#",
         },
 
         {
           content: [
             "3.",
-            "Gigabit Extra Internet + Ultimate TV",
-            "$130.00/mo.",
-            "185+",
-            "Cooking Channel, Cartoon Network, MLB Network",
-            "$0.70",
-            "1,200 Mbps",
+            "Earthlink",
+            "35%",
+            "5,000",
+            "5,000",
           ],
-          linkPath: "#",
         },
 
         {
           content: [
             "4.",
-            "Gigabit Extra Internet + Ultimate TV",
-            "$130.00/mo.",
-            "185+",
-            "Cooking Channel, Cartoon Network, MLB Network",
-            "$0.70",
-            "1,200 Mbps",
+            "Spectrum",
+            "29%",
+            "1,000",
+            "35",
           ],
-          linkPath: "#",
         },
 
         {
           content: [
             "5.",
-            "Gigabit Extra Internet + Ultimate TV",
-            "$130.00/mo.",
-            "185+",
-            "Cooking Channel, Cartoon Network, MLB Network",
-            "$0.70",
-            "1,200 Mbps",
+            "Xfinity",
+            "23%",
+            "2,000",
+            "200",
           ],
-          linkPath: "#",
+        },
+        {
+          content: [
+            "6.",
+            "Google Fiber",
+            "5%",
+            "8,000",
+            "8,000",
+          ],
+        },
+        {
+          content: [
+            "7.",
+            "Ezee Fibe",
+            "3%",
+            "8,000",
+            "8,000",
+          ],
+        },
+        {
+          content: [
+            "8.",
+            "Fidium Fiber",
+            "3%",
+            "2,000",
+            "2,000",
+          ],
+        },
+        {
+          content: [
+            "9.",
+            "Windstream",
+            "1%",
+            "2,000",
+            "2,000",
+          ],
+        },
+        {
+          content: [
+            "10.",
+            "Google Fiber Webpass",
+            "1%",
+            "1,000",
+            "1,000",
+          ],
+        },
+        {
+          content: [
+            "11.",
+            "Nextlink",
+            "1%",
+            "5,000",
+            "1,000",
+          ],
+        },
+        {
+          content: [
+            "12.",
+            "Brightspeed",
+            "1%",
+            "2,000",
+            "2,000",
+          ],
         },
       ],
     },
@@ -165,13 +210,13 @@ export default function Page() {
           </h2>
         </div>
         <div className="package-table-container west-region">
-          <PackageTable item={packageTableData} />
+          <InternetPackageTable item={packageTableData} />
         </div>
       </div>
 
       <div className="section boxes">
-        <div class="container">
-          <div class="item1">
+        <div className="container">
+          <div className="item1">
             <div>
               <h2 className="title">Best Internet Providers in Texas</h2>
               <p className="desc">Some of the top-notch internet service providers in Texas are Spectrum, AT&T, Google Fiber, and Frontier. These Texas internet providers offer various types of internet services, which involve fiber, cable, DSL, and satellite.</p>
@@ -180,12 +225,12 @@ export default function Page() {
               <Image src={BoxOne} alt="thumbnail" />
             </div>
           </div>
-          <div class="item2">
+          <div className="item2">
             <Image src={BoxThree} alt="thumbnail" />
             <h2 className="title">Top Choice for Texas Internet Speed</h2>
             <p className="desc">The top Texas ISPs that present their customers with high-speed internet such as AT&T Fiber and Google Fiber. These internet providers in Texas are also known for their robust gigabit internet plans with appealing pricing. They also offer unlimited data options with no quarterly or yearly contract requirements.</p>
           </div>
-          <div class="item3">
+          <div className="item3">
             <div>
               <h2 className="title">Affordable Texas Internet Options</h2>
               <p className="desc">Everyone wants to go for the affordable internet service providers in Texas. There are budget-friendly internet providers who are the best choice for cost-conscious customers. These Texas internet providers include Frontier and Astound, offering the low cost affordable internet plans.</p>
@@ -348,7 +393,7 @@ export default function Page() {
           <Accordion
             id={"2"}
             title={"What is the best internet provider in Texas?"}
-            cssClass={"faq-content"}
+            cssClassName={"faq-content"}
           >
             <p>
               Spectrum and AT&T are considered the top-notch internet service providers in Texas. These internet service providers are well known for their affordable pricing and fast-speed internet.
@@ -358,7 +403,7 @@ export default function Page() {
           <Accordion
             id={"3"}
             title={"What is the average customer satisfaction with internet services in Texas?"}
-            cssClass={"faq-content"}
+            cssClassName={"faq-content"}
           >
             <p>
               Texas residents rate their internet services an average of 3.7 out of 5 stars, placing the state 21st nationally for customer satisfaction.
@@ -368,7 +413,7 @@ export default function Page() {
           <Accordion
             id={"4"}
             title={"Which cities in Texas have the fastest internet speeds?"}
-            cssClass={"faq-content"}
+            cssClassName={"faq-content"}
           >
             <p>
               Burleson, Princeton, and Manor are cities with the fastest internet speeds, with Burleson achieving an average download speed of 386.56 Mbps.
