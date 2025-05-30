@@ -18,11 +18,7 @@ import IconTwo from "../assets/images/internet-provider/icon-2.png";
 import IconThree from "../assets/images/internet-provider/icon-3.png";
 import IconFour from "../assets/images/internet-provider/icon-4.png";
 import IconFive from "../assets/images/internet-provider/icon-5.png";
-
-
-
-
-
+import { CircleSection } from "../components/circles-section/page";
 import verizon from "../assets/images/brand-logos/verizon.svg";
 import spectrum from "../assets/images/brand-logos/spectrum.svg";
 import netflix from "../assets/images/brand-logos/netflix.svg";
@@ -359,6 +355,8 @@ export default function Page() {
           ))}
         </div>
       </div>
+
+      <CircleSection/>
 
       <div className="section xfinity-bundles">
         <div className="watch-card">

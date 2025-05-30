@@ -144,3 +144,10 @@
     }
   }
 }
+
+
+tr:hover {
+  box-shadow: 0 40px 120px -20px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  cursor: pointer;
+}
